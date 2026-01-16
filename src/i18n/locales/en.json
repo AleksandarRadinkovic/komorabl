@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "membership": "Membership",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Chamber of Independent Entrepreneurs",
+    "subtitle": "Banja Luka",
+    "description": "Support and protection of entrepreneurs' interests in Republika Srpska",
+    "badge": "Supporting Entrepreneurship in Republika Srpska",
+    "stats": {
+      "members": "11,000+",
+      "membersLabel": "Members",
+      "municipalities": "15",
+      "municipalitiesLabel": "Cities and Municipalities",
+      "years": "25+",
+      "yearsLabel": "Years of Experience"
+    },
+    "cta": "Become a Member",
+    "ctaSecondary": "Learn More"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Chamber of Independent Entrepreneurs Banja Luka",
+    "description1": "An independent, professional, non-governmental and non-profit organization that unites independent entrepreneurs from 15 cities and municipalities in the Banja Luka region.",
+    "description2": "Our chamber provides comprehensive support to entrepreneurs through education, consulting and protection of their business interests.",
+    "cta": "Learn More",
+    "features": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "Protecting interests of entrepreneurs and developing entrepreneurship"
+      },
+      "members": {
+        "title": "Over 11,000 Members",
+        "description": "Largest chamber region in Republika Srpska"
+      },
+      "experience": {
+        "title": "25+ Years of Experience",
+        "description": "Long tradition of supporting entrepreneurs"
+      },
+      "growth": {
+        "title": "Continuous Growth",
+        "description": "Constant development and expansion of services"
+      }
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "How We Can Help",
+    "description": "We offer a wide range of services tailored to the needs of independent entrepreneurs",
+    "cta": "All Services",
+    "list": {
+      "administrative": {
+        "title": "Administrative Services",
+        "description": "Issuing certificates, confirmations and other documents"
+      },
+      "education": {
+        "title": "Education & Training",
+        "description": "Seminars, workshops and professional training"
+      },
+      "legal": {
+        "title": "Legal Support",
+        "description": "Consulting and protection of members rights"
+      },
+      "business": {
+        "title": "Business Services",
+        "description": "Support in business development and marketing"
+      },
+      "international": {
+        "title": "International Cooperation",
+        "description": "Connecting with foreign chambers and partners"
+      },
+      "consulting": {
+        "title": "Consulting Services",
+        "description": "Expert assistance and consulting for entrepreneurs"
+      }
+    }
+  },
+  "news": {
+    "badge": "Latest News",
+    "title": "What's New",
+    "description": "Follow the latest news, events and information from our chamber",
+    "cta": "All News",
+    "readMore": "Read More",
+    "categories": {
+      "news": "News",
+      "education": "Education",
+      "events": "Events"
+    },
+    "mockData": {
+      "item1": {
+        "title": "New Incentives for Young Entrepreneurs",
+        "excerpt": "The Government of Republika Srpska announced a new support program for young entrepreneurs with interest-free loans..."
+      },
+      "item2": {
+        "title": "Free Digital Marketing Training",
+        "excerpt": "The Chamber organizes free workshops for all members on digital marketing and online sales..."
+      },
+      "item3": {
+        "title": "2025 Annual Assembly Results",
+        "excerpt": "Successfully held annual assembly with work report and plans for the coming year..."
+      }
+    }
+  },
+  "cta": {
+    "title": "Become Part of Our Community",
+    "description": "Join the largest chamber region in Republika Srpska and enjoy all membership benefits",
+    "benefit1": "Free legal consultations",
+    "benefit2": "Discounts on education and training",
+    "benefit3": "Networking with 11,000+ members",
+    "benefit4": "Business development support",
+    "primaryCta": "Become a Member",
+    "secondaryCta": "Contact Us"
+  },
+  "footer": {
+    "copyright": "© 2026 PKSP Banja Luka. All rights reserved.",
+    "address": "Mladena Stojanovića 16, Banja Luka"
+  }
+}

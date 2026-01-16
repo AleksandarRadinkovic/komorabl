@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Početna",
+    "about": "O komori",
+    "services": "Usluge",
+    "membership": "Članstvo",
+    "news": "Vijesti",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Privredna komora samostalnih preduzetnika",
+    "subtitle": "Banja Luka",
+    "description": "Podrška i zaštita interesa preduzetnika u Republici Srpskoj",
+    "badge": "Podrška preduzetništvu u Republici Srpskoj",
+    "stats": {
+      "members": "11,000+",
+      "membersLabel": "Članova",
+      "municipalities": "15",
+      "municipalitiesLabel": "Gradova i opština",
+      "years": "25+",
+      "yearsLabel": "Godina iskustva"
+    },
+    "cta": "Postani član",
+    "ctaSecondary": "Saznaj više"
+  },
+  "about": {
+    "badge": "O nama",
+    "title": "Privredna komora samostalnih preduzetnika Banja Luka",
+    "description1": "Samostalna, stručno-poslovna, nevladina i neprofitna organizacija koja objedinjuje samostalne preduzetnike sa područja 15 gradova i opština regije Banja Luka.",
+    "description2": "Naša komora pruža sveobuhvatnu podršku preduzetnicima kroz edukaciju, savjetovanje i zaštitu njihovih poslovnih interesa.",
+    "cta": "Saznaj više",
+    "features": {
+      "mission": {
+        "title": "Naša misija",
+        "description": "Zaštita interesa samostalnih preduzetnika i razvoj preduzetništva"
+      },
+      "members": {
+        "title": "Preko 11,000 članova",
+        "description": "Najveća komorska regija u Republici Srpskoj"
+      },
+      "experience": {
+        "title": "25+ godina iskustva",
+        "description": "Dugogodišnja tradicija podrške preduzetnicima"
+      },
+      "growth": {
+        "title": "Kontinuirani rast",
+        "description": "Konstantan razvoj i proširenje usluga za članove"
+      }
+    }
+  },
+  "services": {
+    "badge": "Naše usluge",
+    "title": "Kako možemo pomoći",
+    "description": "Nudimo širok spektar usluga prilagođenih potrebama samostalnih preduzetnika",
+    "cta": "Sve usluge",
+    "list": {
+      "administrative": {
+        "title": "Administrativne usluge",
+        "description": "Izdavanje potvrda, uvjerenja i drugih dokumenata"
+      },
+      "education": {
+        "title": "Edukacija i obuke",
+        "description": "Seminari, radionice i stručna osposobljavanja"
+      },
+      "legal": {
+        "title": "Pravna podrška",
+        "description": "Savjetovanje i zaštita prava članova"
+      },
+      "business": {
+        "title": "Poslovne usluge",
+        "description": "Podrška u razvoju poslovanja i marketingu"
+      },
+      "international": {
+        "title": "Međunarodna saradnja",
+        "description": "Povezivanje sa stranim komorama i partnerima"
+      },
+      "consulting": {
+        "title": "Konsultantske usluge",
+        "description": "Stručna pomoć i savjetovanje za preduzetnike"
+      }
+    }
+  },
+  "news": {
+    "badge": "Najnovije vijesti",
+    "title": "Šta je novo",
+    "description": "Pratite najnovije vijesti, događaje i informacije iz naše komore",
+    "cta": "Sve vijesti",
+    "readMore": "Pročitaj više",
+    "categories": {
+      "news": "Vijesti",
+      "education": "Edukacija",
+      "events": "Događaji"
+    },
+    "mockData": {
+      "item1": {
+        "title": "Novi podsticaji za mlade preduzetnike",
+        "excerpt": "Vlada Republike Srpske najavila je novi program podrške za mlade preduzetnike sa beskamatnim kreditima..."
+      },
+      "item2": {
+        "title": "Besplatne obuke za digitalni marketing",
+        "excerpt": "Komora organizuje besplatne radionice za sve članove na temu digitalnog marketinga i online prodaje..."
+      },
+      "item3": {
+        "title": "Rezultati godišnje skupštine 2025",
+        "excerpt": "Uspješno održana godišnja skupština sa izvještajem o radu i planovima za narednu godinu..."
+      }
+    }
+  },
+  "cta": {
+    "title": "Postanite dio naše zajednice",
+    "description": "Pridružite se najvećoj komorskoj regiji u Republici Srpskoj i iskoristite sve benefite članstva",
+    "benefit1": "Besplatne pravne konsultacije",
+    "benefit2": "Popusti na edukacije i obuke",
+    "benefit3": "Networking sa 11,000+ članova",
+    "benefit4": "Podrška u razvoju biznisa",
+    "primaryCta": "Postani član",
+    "secondaryCta": "Kontaktiraj nas"
+  },
+  "footer": {
+    "copyright": "© 2026 PKSP Banja Luka. Sva prava zadržana.",
+    "address": "Mladena Stojanovića 16, Banja Luka"
+  },
+  "metadata": {
+    "home": {
+      "title": "PKSP Banja Luka - Privredna komora samostalnih preduzetnika",
+      "description": "Najveća komorska regija u Republici Srpskoj sa preko 11,000 članova. Podrška i zaštita interesa samostalnih preduzetnika."
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "PKSP Banja Luka - Chamber of Independent Entrepreneurs",
+      "description": "The largest chamber region in Republika Srpska with over 11,000 members. Support and protection of independent entrepreneurs' interests."
+    }
+  }
+}
