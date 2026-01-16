@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Users, Building2, Award, Sparkles } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 interface HomeHeroProps {
   dict: any;
@@ -10,6 +11,12 @@ interface HomeHeroProps {
 }
 
 export default function HomeHero({ dict, lang }: HomeHeroProps) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
+
   const stats = [
     { icon: Users, value: dict.hero.stats.members, label: dict.hero.stats.membersLabel },
     { icon: Building2, value: dict.hero.stats.municipalities, label: dict.hero.stats.municipalitiesLabel },
@@ -18,54 +25,62 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
 
   return (
     <section className="relative bg-gradient-to-br from-primary via-blue-700 to-blue-900 text-white py-24 overflow-hidden">
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Large animated circles matching logo colors */}
-        <motion.div
-          className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-accent/20 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.3, 1],
-            x: [0, 50, 0],
-            y: [0, 30, 0],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        
-        <motion.div
-          className="absolute top-1/2 -left-40 w-[500px] h-[500px] bg-red-500/15 rounded-full blur-3xl"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            x: [0, -30, 0],
-            y: [0, 50, 0],
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
+      {/* Animated Background Pattern - SAMO NA DESKTOP */}
+      {!isMobile && (
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-accent/20 rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.3, 1],
+              x: [0, 50, 0],
+              y: [0, 30, 0],
+            }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          
+          <motion.div
+            className="absolute top-1/2 -left-40 w-[500px] h-[500px] bg-red-500/15 rounded-full blur-3xl"
+            animate={{
+              scale: [1.2, 1, 1.2],
+              x: [0, -30, 0],
+              y: [0, 50, 0],
+            }}
+            transition={{
+              duration: 12,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
 
-        <motion.div
-          className="absolute -bottom-40 right-1/4 w-[400px] h-[400px] bg-yellow-400/10 rounded-full blur-3xl"
-          animate={{
-            scale: [1, 1.4, 1],
-            x: [0, 40, 0],
-          }}
-          transition={{
-            duration: 18,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
+          <motion.div
+            className="absolute -bottom-40 right-1/4 w-[400px] h-[400px] bg-yellow-400/10 rounded-full blur-3xl"
+            animate={{
+              scale: [1, 1.4, 1],
+              x: [0, 40, 0],
+            }}
+            transition={{
+              duration: 18,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
 
-        {/* Geometric patterns */}
-        <div className="absolute top-20 right-20 w-32 h-32 border-2 border-accent/20 rounded-lg rotate-45 animate-pulse" />
-        <div className="absolute bottom-40 left-20 w-24 h-24 border-2 border-white/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
-      </div>
+          <div className="absolute top-20 right-20 w-32 h-32 border-2 border-accent/20 rounded-lg rotate-45 animate-pulse" />
+          <div className="absolute bottom-40 left-20 w-24 h-24 border-2 border-white/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+        </div>
+      )}
+
+      {/* Jednostavna pozadina za MOBILE */}
+      {isMobile && (
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-[400px] h-[400px] bg-accent/20 rounded-full blur-3xl opacity-50" />
+          <div className="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-red-500/10 rounded-full blur-3xl opacity-50" />
+        </div>
+      )}
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -87,7 +102,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
             className="text-5xl md:text-6xl font-bold mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: isMobile ? 0.5 : 0.8, ease: "easeOut" }}
           >
             {dict.hero.title}
           </motion.h1>
@@ -97,7 +112,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
             className="text-2xl md:text-3xl mb-3 font-semibold text-accent drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
+            transition={{ delay: 0.3, duration: isMobile ? 0.5 : 0.8 }}
           >
             {dict.hero.subtitle}
           </motion.p>
@@ -107,7 +122,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
             className="text-lg md:text-xl opacity-90 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.4, duration: isMobile ? 0.5 : 0.8 }}
           >
             {dict.hero.description}
           </motion.p>
@@ -117,7 +132,7 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
+            transition={{ delay: 0.5, duration: isMobile ? 0.5 : 0.8 }}
           >
             <Link
               href={`/${lang}/clanstvo`}
@@ -142,8 +157,8 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
                 className="bg-white/10 backdrop-blur-md rounded-xl p-6 hover:bg-white/20 transition-all cursor-pointer group border border-white/20 shadow-xl"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 + index * 0.1, duration: 0.8 }}
-                whileHover={{ scale: 1.05, y: -5 }}
+                transition={{ delay: 0.6 + index * 0.1, duration: isMobile ? 0.4 : 0.8 }}
+                whileHover={!isMobile ? { scale: 1.05, y: -5 } : {}}
               >
                 <stat.icon size={40} className="mx-auto mb-3 text-accent group-hover:scale-110 transition-transform drop-shadow-lg" />
                 <motion.div
@@ -161,20 +176,22 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-          <motion.div
-            className="w-1.5 h-1.5 bg-accent rounded-full shadow-lg"
-            animate={{ y: [0, 16, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </div>
-      </motion.div>
+      {/* Scroll indicator - SAMO DESKTOP */}
+      {!isMobile && (
+        <motion.div
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
+            <motion.div
+              className="w-1.5 h-1.5 bg-accent rounded-full shadow-lg"
+              animate={{ y: [0, 16, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </div>
+        </motion.div>
+      )}
     </section>
   );
 }
