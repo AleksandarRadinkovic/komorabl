@@ -119,5 +119,11 @@
   "footer": {
     "copyright": "© 2026 PKSP Banja Luka. All rights reserved.",
     "address": "Mladena Stojanovića 16, Banja Luka"
+  },
+  "metadata": {
+    "home": {
+      "title": "PKSP Banja Luka - Chamber of Independent Entrepreneurs",
+      "description": "The largest chamber region in Republika Srpska with over 11,000 members. Support and protection of independent entrepreneurs' interests."
+    }
   }
 }
