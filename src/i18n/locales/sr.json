@@ -8,7 +8,7 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Privredna komora samostalnih preduzetnika",
+    "title": "Područna komora samostalnih preduzetnika",
     "subtitle": "Banja Luka",
     "description": "Podrška i zaštita interesa preduzetnika u Republici Srpskoj",
     "badge": "Podrška preduzetništvu u Republici Srpskoj",
@@ -25,7 +25,7 @@
   },
   "about": {
     "badge": "O nama",
-    "title": "Privredna komora samostalnih preduzetnika Banja Luka",
+    "title": "Područna komora samostalnih preduzetnika Banja Luka",
     "description1": "Samostalna, stručno-poslovna, nevladina i neprofitna organizacija koja objedinjuje samostalne preduzetnike sa područja 15 gradova i opština regije Banja Luka.",
     "description2": "Naša komora pruža sveobuhvatnu podršku preduzetnicima kroz edukaciju, savjetovanje i zaštitu njihovih poslovnih interesa.",
     "cta": "Saznaj više",
@@ -122,7 +122,7 @@
   },
   "metadata": {
     "home": {
-      "title": "PKSP Banja Luka - Privredna komora samostalnih preduzetnika",
+      "title": "PKSP Banja Luka - Područna komora samostalnih preduzetnika",
       "description": "Najveća komorska regija u Republici Srpskoj sa preko 11,000 članova. Podrška i zaštita interesa samostalnih preduzetnika."
     }
   }
