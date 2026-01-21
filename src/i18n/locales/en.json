@@ -17,34 +17,36 @@
       "membersLabel": "Members",
       "municipalities": "15",
       "municipalitiesLabel": "Cities and Municipalities",
-      "years": "25+",
+      "years": "100+",
       "yearsLabel": "Years of Experience"
     },
-    "cta": "Become a Member",
+    "cta": "Start Procedure",
     "ctaSecondary": "Learn More"
   },
   "about": {
     "badge": "About Us",
-    "title": "Chamber of Independent Entrepreneurs Banja Luka",
-    "description1": "An independent, professional, non-governmental and non-profit organization that unites independent entrepreneurs from 15 cities and municipalities in the Banja Luka region.",
-    "description2": "Our chamber provides comprehensive support to entrepreneurs through education, consulting and protection of their business interests.",
+    "title": "A Tradition of More Than 100 Years",
+    "description1": "The Regional Chamber of Independent Entrepreneurs Banja Luka is an independent, professional, non-governmental and non-profit organization that unites independent entrepreneurs from 15 cities and municipalities in the Banja Luka region.",
+    "description2": "Our chamber provides comprehensive support to entrepreneurs through education, consulting and protection of their business interests. With a tradition dating back to 1909, we continue to be a pillar of support for the entrepreneurial community.",
+    "description3": "As part of the European network of entrepreneurs, we actively participate in international projects and EU programs. Contact us for information about current projects and cooperation opportunities.",
     "cta": "Learn More",
+    "ctaProjects": "EU Projects",
     "features": {
-      "mission": {
-        "title": "Our Mission",
-        "description": "Protecting interests of entrepreneurs and developing entrepreneurship"
+      "history": {
+        "title": "Since 1909",
+        "description": "More than 115 years of tradition and support for entrepreneurs"
       },
       "members": {
-        "title": "Over 11,000 Members",
+        "title": "11,000+ Members",
         "description": "Largest chamber region in Republika Srpska"
       },
-      "experience": {
-        "title": "25+ Years of Experience",
-        "description": "Long tradition of supporting entrepreneurs"
+      "europe": {
+        "title": "EU Network",
+        "description": "Part of the European network of entrepreneurs and EU projects"
       },
-      "growth": {
-        "title": "Continuous Growth",
-        "description": "Constant development and expansion of services"
+      "mission": {
+        "title": "Our Mission",
+        "description": "Protecting interests and developing entrepreneurship in the region"
       }
     }
   },
