@@ -17,37 +17,39 @@
       "membersLabel": "Članova",
       "municipalities": "15",
       "municipalitiesLabel": "Gradova i opština",
-      "years": "25+",
+      "years": "100+",
       "yearsLabel": "Godina iskustva"
     },
-    "cta": "Postani član",
+    "cta": "Pokreni proceduru",
     "ctaSecondary": "Saznaj više"
   },
-  "about": {
-    "badge": "O nama",
-    "title": "Područna komora samostalnih preduzetnika Banja Luka",
-    "description1": "Samostalna, stručno-poslovna, nevladina i neprofitna organizacija koja objedinjuje samostalne preduzetnike sa područja 15 gradova i opština regije Banja Luka.",
-    "description2": "Naša komora pruža sveobuhvatnu podršku preduzetnicima kroz edukaciju, savjetovanje i zaštitu njihovih poslovnih interesa.",
-    "cta": "Saznaj više",
-    "features": {
-      "mission": {
-        "title": "Naša misija",
-        "description": "Zaštita interesa samostalnih preduzetnika i razvoj preduzetništva"
-      },
-      "members": {
-        "title": "Preko 11,000 članova",
-        "description": "Najveća komorska regija u Republici Srpskoj"
-      },
-      "experience": {
-        "title": "25+ godina iskustva",
-        "description": "Dugogodišnja tradicija podrške preduzetnicima"
-      },
-      "growth": {
-        "title": "Kontinuirani rast",
-        "description": "Konstantan razvoj i proširenje usluga za članove"
-      }
+"about": {
+  "badge": "O nama",
+  "title": "Tradicija dugačka više od 100 godina",
+  "description1": "Područna komora samostalnih preduzetnika Banja Luka je samostalna, stručno-poslovna, nevladina i neprofitna organizacija koja objedinjuje samostalne preduzetnike sa područja 15 gradova i opština regije Banja Luka.",
+  "description2": "Naša komora pruža sveobuhvatnu podršku preduzetnicima kroz edukaciju, savjetovanje i zaštitu njihovih poslovnih interesa. Sa tradicijom koja datira još od 1909. godine, nastavljamo da budemo stub podrške za preduzetničku zajednicu.",
+  "description3": "Kao dio evropske mreže preduzetnika, aktivno učestvujemo u međunarodnim projektima i EU programima. Kontaktirajte nas za informacije o aktuelnim projektima i mogućnostima saradnje.",
+  "cta": "Saznaj više",
+  "ctaProjects": "EU projekti",
+  "features": {
+    "history": {
+      "title": "Od 1909. godine",
+      "description": "Više od 115 godina tradicije i podrške preduzetnicima"
+    },
+    "members": {
+      "title": "11,000+ članova",
+      "description": "Najveća komorska regija u Republici Srpskoj"
+    },
+    "europe": {
+      "title": "EU mreža",
+      "description": "Dio evropske mreže preduzetnika i EU projekata"
+    },
+    "mission": {
+      "title": "Naša misija",
+      "description": "Zaštita interesa i razvoj preduzetništva u regiji"
     }
-  },
+  }
+},
   "services": {
     "badge": "Naše usluge",
     "title": "Kako možemo pomoći",

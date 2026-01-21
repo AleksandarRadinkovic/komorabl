@@ -76,7 +76,7 @@ export default function CTASection({ dict, lang }: CTASectionProps) {
           >
             <Link
               href={`/${lang}/clanstvo`}
-              className="group bg-accent text-neutral-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
+              className="group bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent-light transition transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl"
             >
               {dict.cta.primaryCta}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Target, Users, Award, TrendingUp } from 'lucide-react';
+import { ArrowRight, Target, Users, Award, Globe, Mail } from 'lucide-react';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -17,9 +17,9 @@ export default function AboutPreview({ dict, lang }: AboutPreviewProps) {
 
   const features = [
     {
-      icon: Target,
-      title: dict.about.features.mission.title,
-      description: dict.about.features.mission.description
+      icon: Award,
+      title: dict.about.features.history.title,
+      description: dict.about.features.history.description
     },
     {
       icon: Users,
@@ -27,19 +27,19 @@ export default function AboutPreview({ dict, lang }: AboutPreviewProps) {
       description: dict.about.features.members.description
     },
     {
-      icon: Award,
-      title: dict.about.features.experience.title,
-      description: dict.about.features.experience.description
+      icon: Globe,
+      title: dict.about.features.europe.title,
+      description: dict.about.features.europe.description
     },
     {
-      icon: TrendingUp,
-      title: dict.about.features.growth.title,
-      description: dict.about.features.growth.description
+      icon: Target,
+      title: dict.about.features.mission.title,
+      description: dict.about.features.mission.description
     }
   ];
 
   return (
-    <section ref={ref} className="py-20 bg-neutral-50">
+    <section ref={ref} className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left - Text Content */}
@@ -65,17 +65,32 @@ export default function AboutPreview({ dict, lang }: AboutPreviewProps) {
               {dict.about.description1}
             </p>
 
-            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+            <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
               {dict.about.description2}
             </p>
 
-            <Link
-              href={`/${lang}/o-komori`}
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition group"
-            >
-              {dict.about.cta}
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
+              {dict.about.description3}
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href={`/${lang}/o-komori`}
+                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition group"
+              >
+                {dict.about.cta}
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </Link>
+              
+              <Link
+                href={`/${lang}/kontakt`}
+                className="inline-flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-light transition group"
+              >
+                <Mail size={20} />
+                {dict.about.ctaProjects}
+              </Link>
+            </div>
           </motion.div>
 
           {/* Right - Feature Grid */}
@@ -88,7 +103,7 @@ export default function AboutPreview({ dict, lang }: AboutPreviewProps) {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all group cursor-pointer border border-neutral-100"
+                className="bg-neutral-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all group cursor-pointer border border-neutral-100 hover:border-primary/20"
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
@@ -97,7 +112,9 @@ export default function AboutPreview({ dict, lang }: AboutPreviewProps) {
                 <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all">
                   <feature.icon size={28} className="text-primary group-hover:text-white transition-colors" />
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-2">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-primary transition-colors">
+                  {feature.title}
+                </h3>
                 <p className="text-neutral-600 text-sm leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}

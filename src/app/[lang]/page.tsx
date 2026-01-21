@@ -1,9 +1,9 @@
 import { getDictionary } from '@/i18n/dictionary';
-import HomeHero from '@/components/sections/HomeHero';
-import AboutPreview from '@/components/sections/AboutPreview';
-import ServicesPreview from '@/components/sections/ServicesPreview';
-import LatestNews from '@/components/sections/LatestNews';
-import CTASection from '@/components/sections/CTASection';
+import HomeHero from '@/components/sections/home/HomeHero';
+import AboutPreview from '@/components/sections/home/AboutPreview';
+import ServicesPreview from '@/components/sections/home/ServicesPreview';
+import LatestNews from '@/components/sections/home/LatestNews';
+import CTASection from '@/components/sections/home/CTASection';
 
 export default async function HomePage({ params }: { params: { lang: 'sr' | 'en' } }) {
   const dict = await getDictionary(params.lang);

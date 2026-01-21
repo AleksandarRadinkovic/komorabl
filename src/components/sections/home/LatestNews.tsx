@@ -85,7 +85,8 @@ export default function LatestNews({ dict, lang }: LatestNewsProps) {
                 <div className="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold opacity-20">
                   {item.id}
                 </div>
-                <div className="absolute top-4 left-4 bg-accent text-neutral-900 px-3 py-1 rounded-full text-sm font-semibold">
+                {/* Badge uz sliku - gore lijevo */}
+                <div className="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                   {item.category}
                 </div>
               </div>
@@ -123,7 +124,7 @@ export default function LatestNews({ dict, lang }: LatestNewsProps) {
           ))}
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button - BIJELI TEKST */}
         <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
