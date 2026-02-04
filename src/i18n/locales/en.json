@@ -50,7 +50,7 @@
       }
     }
   },
-  "services": {
+  "servicesPreview": {
     "badge": "Our Services",
     "title": "How We Can Help",
     "description": "We offer a wide range of services tailored to the needs of independent entrepreneurs",
@@ -118,14 +118,375 @@
     "primaryCta": "Become a Member",
     "secondaryCta": "Contact Us"
   },
-  "footer": {
-    "copyright": "© 2026 PKSP Banja Luka. All rights reserved.",
-    "address": "Mladena Stojanovića 16, Banja Luka"
+"footer": {
+  "sections": {
+    "contact": "Contact",
+    "quickLinks": "Quick Links",
+    "workingHours": "Working Hours"
   },
+  "address": "Mladena Stojanovića 16, Banja Luka",
+  "workingHours": {
+    "weekdays": "Mon - Fri: 08:00 - 16:00",
+    "weekend": "Sat - Sun: Closed"
+  },
+  "copyright": "© 2026 PKSP Banja Luka. All rights reserved."
+},
+
   "metadata": {
     "home": {
       "title": "PKSP Banja Luka - Chamber of Independent Entrepreneurs",
       "description": "The largest chamber region in Republika Srpska with over 11,000 members. Support and protection of independent entrepreneurs' interests."
     }
+  },
+"contact": {
+  "breadcrumb": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Contact Us",
+    "description": "We're here to answer all your questions and help you grow your business",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "form": {
+    "badge": "Send us a message",
+    "title": "Contact Form",
+    "description": "Fill out the form below and we'll get back to you as soon as possible",
+    "fields": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Enter your name",
+      "email": "your@email.com",
+      "phone": "+387 ...",
+      "subject": "Message subject",
+      "message": "Your message..."
+    },
+    "submit": "Send Message",
+    "success": "Message sent successfully!"
+  },
+  "info": {
+    "badge": "Useful information",
+    "title": "Additional Information",
+    "description": "Everything you need to know about our work and contact methods",
+    "workingHours": {
+      "title": "Working Hours",
+      "weekdays": "Mon - Fri: 08:00 - 16:00",
+      "weekend": "Sat - Sun: Closed"
+    },
+    "euProjects": {
+      "title": "EU Projects",
+      "item1": "We participate in EU programs",
+      "item2": "Contact us for collaboration"
+    },
+    "documents": {
+      "title": "Documentation",
+      "item1": "Certificates and confirmations",
+      "item2": "Statutory acts"
+    },
+    "membership": {
+      "title": "Membership",
+      "item1": "Automatic membership upon SP registration",
+      "item2": "Benefits for all members"
+    },
+    "cta": {
+      "title": "Ready to become part of our chamber?",
+      "description": "Register your independent business and automatically become a member with all benefits",
+      "primary": "Learn about membership",
+      "secondary": "View services"
+    }
+  },
+  "map": {
+    "badge": "Visit us",
+    "title": "Our Location",
+    "description": "We are located in the center of Banja Luka, easily accessible by all means of transport",
+    "details": {
+      "address": "Address",
+      "hours": "Working Hours",
+      "hoursContent": "Mon - Fri, 08:00 - 16:00",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "directions": "Get Directions"
   }
+},
+"membership": {
+  "breadcrumb": {
+    "home": "Home",
+    "membership": "Membership"
+  },
+  "hero": {
+    "badge": "11,000+ active members",
+    "title": "Automatic Membership for All Entrepreneurs",
+    "description": "By registering your independent business in the Banja Luka region, you automatically become a member of our chamber with all benefits",
+    "point1": "No additional costs",
+    "point2": "Automatic registration",
+    "point3": "Instant access to benefits",
+    "cta": "Contact Us"
+  },
+  "automatic": {
+    "badge": "How it works",
+    "title": "Simple Membership Process",
+    "description": "Chamber membership is automatic and begins the moment you register your independent business with the relevant authority",
+    "step1": {
+      "title": "Register Your Business",
+      "description": "Submit a request to register your independent business at the Registration Agency"
+    },
+    "step2": {
+      "title": "Automatic Enrollment",
+      "description": "The agency automatically registers your business with our chamber"
+    },
+    "step3": {
+      "title": "Receive Membership",
+      "description": "You become a full member with access to all services and benefits"
+    },
+    "infoBox": {
+      "title": "Important Note",
+      "description": "Membership is mandatory for all independent entrepreneurs operating in our region (15 cities and municipalities). The membership fee is paid once a year and covers all services and benefits provided by the chamber."
+    }
+  },
+  "benefits": {
+    "badge": "Membership Benefits",
+    "title": "What You Get as a Member",
+    "description": "As a member of our chamber, you have access to a wide range of services and benefits that will help you grow your business",
+    "list": {
+      "legal": {
+        "title": "Legal Protection",
+        "description": "Free legal consultations, representation before institutions, and protection of your rights as an entrepreneur"
+      },
+      "education": {
+        "title": "Education & Training",
+        "description": "Access to seminars, workshops, and training programs with discounts up to 50% for all members"
+      },
+      "networking": {
+        "title": "Networking",
+        "description": "Connect with 11,000+ entrepreneurs, business events, and B2B meetings"
+      },
+      "business": {
+        "title": "Business Support",
+        "description": "Business development consultations, marketing assistance, and access to business opportunities"
+      },
+      "administrative": {
+        "title": "Administrative Services",
+        "description": "Issuing certificates, confirmations, and other documents at preferential prices"
+      },
+      "international": {
+        "title": "EU Projects",
+        "description": "Participation in international projects and access to EU funds and programs"
+      }
+    }
+  },
+  "process": {
+    "badge": "Step by step",
+    "title": "How to Register Your Business",
+    "description": "A guide through the process of registering an independent business and automatically acquiring chamber membership",
+    "steps": {
+      "step1": {
+        "title": "Prepare Documentation",
+        "description": "Obtain the necessary documents",
+        "details": "ID card, unique citizen number (JMBG), birth certificate extract, and proof of residential address"
+      },
+      "step2": {
+        "title": "Submit Application",
+        "description": "Submit request to the Agency",
+        "details": "You can submit a registration request in person at the Registration Agency or electronically via e-Register. You need to define the activity you will perform"
+      },
+      "step3": {
+        "title": "Wait for Approval",
+        "description": "Approval process",
+        "details": "The Registration Agency processes your request (usually 1-3 business days). After approval, you are automatically registered with our chamber"
+      },
+      "step4": {
+        "title": "Membership Activation",
+        "description": "You get access to benefits",
+        "details": "We contact you via email and phone with membership details, membership card, and instructions for using all benefits"
+      }
+    },
+    "cta": {
+      "title": "Have questions about the process?",
+      "description": "Our team is here to help you with every step of registration and explain all membership details",
+      "button": "Contact Us"
+    }
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "Questions & Answers",
+    "description": "Answers to the most common questions about chamber membership",
+    "items": {
+      "item1": {
+        "question": "Is membership mandatory?",
+        "answer": "Yes, membership in the Chamber of Independent Entrepreneurs is mandatory for all independent entrepreneurs operating in the 15 municipalities of the Banja Luka region, in accordance with the Law on Chambers of Republika Srpska."
+      },
+      "item2": {
+        "question": "How much is the annual membership fee?",
+        "answer": "The annual membership fee is determined based on your business's income level. You can find out the exact amount by contacting our office or via email. The fee covers all basic chamber services."
+      },
+      "item3": {
+        "question": "When does my membership begin?",
+        "answer": "Your membership begins automatically on the date of registration of your independent business at the Registration Agency. You will receive a membership notification via email or mail within 7 days."
+      },
+      "item4": {
+        "question": "What services are included in the membership fee?",
+        "answer": "The membership fee covers: legal consultations, representation before institutions, issuing basic certificates and confirmations, access to education (with discount), networking events, and business information."
+      },
+      "item5": {
+        "question": "Can I cancel my membership?",
+        "answer": "Membership automatically ends when you close or transfer your independent business outside our region. For questions about membership termination, contact our administrative service."
+      },
+      "item6": {
+        "question": "How can I use membership benefits?",
+        "answer": "After becoming a member, you will receive access to the online member portal where you can schedule consultations, register for education, and request document issuance. You can also contact us by phone or email."
+      }
+    }
+  }
+},
+"services": {
+  "breadcrumb": {
+    "home": "Home",
+    "services": "Services"
+  },
+  "hero": {
+    "badge": "Complete support for entrepreneurs",
+    "title": "Our Services",
+    "description": "We provide comprehensive support covering all aspects of independent entrepreneur business operations",
+    "stats": {
+      "categories": "Categories",
+      "servicesPerMonth": "Services per month",
+      "members": "Members",
+      "satisfaction": "Satisfaction"
+    }
+  },
+  "grid": {
+    "badge": "What we offer",
+    "title": "Details about our services",
+    "description": "All services available to our members - from administrative to international cooperation",
+    "ctaButton": "Request service",
+    "services": {
+      "administrative": {
+        "title": "Administrative Services",
+        "description": "Fast and efficient issuance of all necessary documents and certificates for your business",
+        "feature1": "Membership certificates",
+        "feature2": "Activity performance confirmations",
+        "feature3": "Document authentication",
+        "feature4": "Tender and project recommendations"
+      },
+      "education": {
+        "title": "Education & Training",
+        "description": "Professional workshops, seminars and online courses for continuous improvement",
+        "feature1": "Free webinars for members",
+        "feature2": "Tax regulation seminars",
+        "feature3": "Digital marketing training",
+        "feature4": "Certified training programs"
+      },
+      "legal": {
+        "title": "Legal Support",
+        "description": "Professional legal assistance and representation in all situations concerning your business",
+        "feature1": "Free legal consultations",
+        "feature2": "Contract and agreement drafting",
+        "feature3": "Representation before institutions",
+        "feature4": "Dispute resolution"
+      },
+      "business": {
+        "title": "Business Support",
+        "description": "Help in developing and growing your business through consulting and mentorship",
+        "feature1": "Business consultations",
+        "feature2": "Business plan development",
+        "feature3": "Marketing support",
+        "feature4": "Access to business opportunities"
+      },
+      "international": {
+        "title": "International Cooperation",
+        "description": "Connecting with foreign partners and access to EU programs and funds",
+        "feature1": "EU projects and funds",
+        "feature2": "Cooperation with foreign chambers",
+        "feature3": "B2B matchmaking events",
+        "feature4": "International trade fairs"
+      },
+      "consulting": {
+        "title": "Consulting Services",
+        "description": "Individual consultations with experts from various business areas",
+        "feature1": "Financial consulting",
+        "feature2": "Accounting support",
+        "feature3": "HR consultations",
+        "feature4": "IT and digitalization"
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Service Prices",
+    "description": "Transparent pricing for all our services. Chamber members receive discounts on most services.",
+    "categories": {
+      "administrative": {
+        "title": "Administrative Services",
+        "item1": "Membership certificate",
+        "price1": "Free",
+        "item2": "Activity performance confirmation",
+        "price2": "5 BAM",
+        "item3": "Document authentication",
+        "price3": "3 BAM",
+        "item4": "Tender recommendation",
+        "price4": "10 BAM"
+      },
+      "education": {
+        "title": "Education & Training",
+        "item1": "Webinars (for members)",
+        "price1": "Free",
+        "item2": "One-day seminar",
+        "price2": "From 30 BAM",
+        "item3": "Multi-day training",
+        "price3": "From 100 BAM"
+      },
+      "legal": {
+        "title": "Legal Support",
+        "item1": "Legal consultations (for members)",
+        "price1": "Free",
+        "item2": "Contract drafting",
+        "price2": "From 50 BAM",
+        "item3": "Representation before institutions",
+        "price3": "By agreement"
+      }
+    },
+    "note": {
+      "title": "Pricing Note",
+      "description": "Prices are indicative and may vary depending on service complexity. Chamber members receive discounts on most services. For detailed pricing information, contact our administrative office."
+    }
+  },
+  "contact": {
+    "title": "Need help or additional information?",
+    "description": "Our team is here to answer all your questions and help you choose the right service",
+    "methods": {
+      "phone": {
+        "title": "Call us",
+        "description": "Weekdays 08:00-16:00"
+      },
+      "email": {
+        "title": "Send email",
+        "description": "We respond within 24h"
+      },
+      "visit": {
+        "title": "Visit us",
+        "description": "Banja Luka"
+      },
+      "hours": {
+        "title": "Working hours",
+        "content": "Mon - Fri, 08:00 - 16:00",
+        "description": "Closed on weekends"
+      }
+    },
+    "cta": {
+      "title": "Ready to use our services?",
+      "description": "Contact us today and find out how we can help your business",
+      "primary": "Contact form",
+      "secondary": "Call now"
+    }
+  }
+}
+
 }

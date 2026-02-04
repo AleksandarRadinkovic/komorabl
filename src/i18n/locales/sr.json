@@ -50,7 +50,7 @@
     }
   }
 },
-  "services": {
+  "servicesPreview": {
     "badge": "Naše usluge",
     "title": "Kako možemo pomoći",
     "description": "Nudimo širok spektar usluga prilagođenih potrebama samostalnih preduzetnika",
@@ -118,14 +118,375 @@
     "primaryCta": "Postani član",
     "secondaryCta": "Kontaktiraj nas"
   },
-  "footer": {
-    "copyright": "© 2026 PKSP Banja Luka. Sva prava zadržana.",
-    "address": "Mladena Stojanovića 16, Banja Luka"
+"footer": {
+  "sections": {
+    "contact": "Kontakt",
+    "quickLinks": "Brzi linkovi",
+    "workingHours": "Radno vrijeme"
   },
+  "address": "Mladena Stojanovića 16, Banja Luka",
+  "workingHours": {
+    "weekdays": "Pon - Pet: 08:00 - 16:00",
+    "weekend": "Sub - Ned: Zatvoreno"
+  },
+  "copyright": "© 2026 PKSP Banja Luka. Sva prava zadržana."
+},
+
   "metadata": {
     "home": {
       "title": "PKSP Banja Luka - Područna komora samostalnih preduzetnika",
       "description": "Najveća komorska regija u Republici Srpskoj sa preko 11,000 članova. Podrška i zaštita interesa samostalnih preduzetnika."
     }
+  },
+"contact": {
+  "breadcrumb": {
+    "home": "Početna",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Kontaktirajte nas",
+    "description": "Tu smo da odgovorimo na sva vaša pitanja i pomognemo vam u razvoju vašeg poslovanja",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adresa"
+  },
+  "form": {
+    "badge": "Pošaljite nam poruku",
+    "title": "Kontakt forma",
+    "description": "Popunite formu ispod i odgovorićemo vam u najkraćem mogućem roku",
+    "fields": {
+      "name": "Ime i prezime",
+      "email": "Email adresa",
+      "phone": "Telefon",
+      "subject": "Naslov",
+      "message": "Poruka"
+    },
+    "placeholders": {
+      "name": "Unesite vaše ime",
+      "email": "vas@email.com",
+      "phone": "+387 ...",
+      "subject": "Tema poruke",
+      "message": "Vaša poruka..."
+    },
+    "submit": "Pošalji poruku",
+    "success": "Poruka uspješno poslata!"
+  },
+  "info": {
+    "badge": "Korisne informacije",
+    "title": "Dodatne informacije",
+    "description": "Sve što trebate znati o našem radu i načinu kontakta",
+    "workingHours": {
+      "title": "Radno vrijeme",
+      "weekdays": "Pon - Pet: 08:00 - 16:00",
+      "weekend": "Sub - Ned: Zatvoreno"
+    },
+    "euProjects": {
+      "title": "EU projekti",
+      "item1": "Učestvujemo u EU programima",
+      "item2": "Kontaktirajte nas za saradnju"
+    },
+    "documents": {
+      "title": "Dokumentacija",
+      "item1": "Potvrde i uvjerenja",
+      "item2": "Statutarna akta"
+    },
+    "membership": {
+      "title": "Članstvo",
+      "item1": "Automatsko članstvo pri registraciji SP",
+      "item2": "Benefiti za sve članove"
+    },
+    "cta": {
+      "title": "Spremni da postanete dio naše komore?",
+      "description": "Registrujte vaše samostalno preduzeće i automatski postanite član sa svim benefitima",
+      "primary": "Saznaj o članstvu",
+      "secondary": "Pogledaj usluge"
+    }
+  },
+  "map": {
+    "badge": "Posjetite nas",
+    "title": "Naša lokacija",
+    "description": "Nalazimo se u centru Banja Luke, lako dostupni svim prevoznim sredstvima",
+    "details": {
+      "address": "Adresa",
+      "hours": "Radno vrijeme",
+      "hoursContent": "Pon - Pet, 08:00 - 16:00",
+      "phone": "Telefon",
+      "email": "Email"
+    },
+    "directions": "Upute za dolazak"
   }
+},
+"membership": {
+  "breadcrumb": {
+    "home": "Početna",
+    "membership": "Članstvo"
+  },
+  "hero": {
+    "badge": "11,000+ aktivnih članova",
+    "title": "Automatsko članstvo za sve preduzetnike",
+    "description": "Registracijom samostalnog preduzeća na području Banja Luke regije automatski postajete član naše komore sa svim benefitima",
+    "point1": "Bez dodatnih troškova",
+    "point2": "Automatska registracija",
+    "point3": "Trenutni pristup benefitima",
+    "cta": "Kontaktirajte nas"
+  },
+  "automatic": {
+    "badge": "Kako funkcioniše",
+    "title": "Jednostavan proces članstva",
+    "description": "Članstvo u komori je automatsko i počinje u trenutku registracije vašeg samostalnog preduzeća kod nadležnog organa",
+    "step1": {
+      "title": "Registrujete SP",
+      "description": "Podnosite zahtjev za registraciju samostalnog preduzeća u Agenciji za registraciju"
+    },
+    "step2": {
+      "title": "Automatska prijava",
+      "description": "Agencija automatski prijavljuje vaše SP našoj komori"
+    },
+    "step3": {
+      "title": "Dobijate članstvo",
+      "description": "Postajete punopravni član sa pristupom svim uslugama i benefitima"
+    },
+    "infoBox": {
+      "title": "Važna napomena",
+      "description": "Članstvo je obavezno za sve samostalne preduzetnike koji posluju na području naše regije (15 gradova i opština). Članarina se plaća jednom godišnje i pokriva sve usluge i benefite koje komora pruža."
+    }
+  },
+  "benefits": {
+    "badge": "Benefiti članstva",
+    "title": "Šta dobijate kao član",
+    "description": "Kao član naše komore, imate pristup širokom spektru usluga i pogodnosti koje će vam pomoći u razvoju vašeg poslovanja",
+    "list": {
+      "legal": {
+        "title": "Pravna zaštita",
+        "description": "Besplatne pravne konsultacije, zastupanje pred institucijama i zaštita vaših prava kao preduzetnika"
+      },
+      "education": {
+        "title": "Edukacija i obuke",
+        "description": "Pristup seminarima, radionicama i obukama sa popustima do 50% za sve članove"
+      },
+      "networking": {
+        "title": "Networking",
+        "description": "Povezivanje sa 11,000+ preduzetnika, poslovni događaji i B2B sastanci"
+      },
+      "business": {
+        "title": "Poslovna podrška",
+        "description": "Konsultacije za razvoj biznisa, pomoć u marketingu i pristup poslovnim prilikama"
+      },
+      "administrative": {
+        "title": "Administrativne usluge",
+        "description": "Izdavanje potvrda, uvjerenja i drugih dokumenata po povoljnijim cijenama"
+      },
+      "international": {
+        "title": "EU projekti",
+        "description": "Učešće u međunarodnim projektima i pristup EU fondovima i programima"
+      }
+    }
+  },
+  "process": {
+    "badge": "Korak po korak",
+    "title": "Kako registrovati SP",
+    "description": "Vodič kroz proces registracije samostalnog preduzeća i automatskog sticanja članstva u komori",
+    "steps": {
+      "step1": {
+        "title": "Priprema dokumentacije",
+        "description": "Pribavite potrebna dokumenta",
+        "details": "Lična karta, jedinstveni matični broj građana (JMBG), izvod iz matične knjige rođenih i dokaz o adresi prebivališta"
+      },
+      "step2": {
+        "title": "Podnošenje zahtjeva",
+        "description": "Podnesite zahtjev u Agenciju",
+        "details": "Zahtjev za registraciju možete podnijeti lično u Agenciji za registraciju ili elektronski preko e-Registra. Potrebno je definisati djelatnost koju ćete obavljati"
+      },
+      "step3": {
+        "title": "Čekanje na odobrenje",
+        "description": "Proces odobravanja",
+        "details": "Agencija za registraciju procesira vaš zahtjev (obično 1-3 radna dana). Nakon odobrenja, automatski bivate prijavljeni u našu komoru"
+      },
+      "step4": {
+        "title": "Aktivacija članstva",
+        "description": "Dobijate pristup benefitima",
+        "details": "Kontaktiramo vas putem emaila i telefona sa detaljima članstva, članskom karticom i uputstvima za korišćenje svih pogodnosti"
+      }
+    },
+    "cta": {
+      "title": "Imate pitanja o procesu?",
+      "description": "Naš tim je tu da vam pomogne u svakom koraku registracije i objasni sve detalje članstva",
+      "button": "Kontaktirajte nas"
+    }
+  },
+  "faq": {
+    "badge": "Često postavljena pitanja",
+    "title": "Pitanja i odgovori",
+    "description": "Odgovori na najčešća pitanja o članstvu u komori",
+    "items": {
+      "item1": {
+        "question": "Da li je članstvo obavezno?",
+        "answer": "Da, članstvo u Komori samostalnih preduzetnika je obavezno za sve samostalne preduzetnike koji posluju na području 15 opština regije Banja Luka, u skladu sa Zakonom o komorama Republike Srpske."
+      },
+      "item2": {
+        "question": "Koliko košta godišnja članarina?",
+        "answer": "Godišnja članarina se određuje na osnovu visine prihoda vašeg preduzeća. Tačan iznos možete saznati kontaktirajući našu kancelariju ili putem email-a. Članarina pokriva sve osnovne usluge komore."
+      },
+      "item3": {
+        "question": "Kada počinje moje članstvo?",
+        "answer": "Vaše članstvo počinje automatski danom registracije samostalnog preduzeća u Agenciji za registraciju. Obavještenje o članstvu ćete dobiti putem email-a ili pošte u roku od 7 dana."
+      },
+      "item4": {
+        "question": "Koje usluge su uključene u članarinu?",
+        "answer": "Članarina pokriva: pravne konsultacije, zastupanje pred institucijama, izdavanje osnovnih potvrda i uvjerenja, pristup edukacijama (uz popust), networking događaje i poslovne informacije."
+      },
+      "item5": {
+        "question": "Mogu li odustati od članstva?",
+        "answer": "Članstvo prestaje automatski kada zatvorite ili prenesete samostalno preduzeće van područja naše regije. Za pitanja o prestanku članstva kontaktirajte našu administrativnu službu."
+      },
+      "item6": {
+        "question": "Kako mogu iskoristiti benefite članstva?",
+        "answer": "Nakon što postanete član, dobićete pristup online članskom portalu gdje možete zakazati konsultacije, prijaviti se na edukacije i zatražiti izdavanje dokumenata. Takođe nas možete kontaktirati telefonom ili putem email-a."
+      }
+    }
+  }
+},
+"services": {
+  "breadcrumb": {
+    "home": "Početna",
+    "services": "Usluge"
+  },
+  "hero": {
+    "badge": "Kompletna podrška za preduzetnike",
+    "title": "Naše usluge",
+    "description": "Pružamo sveobuhvatnu podršku koja pokriva sve aspekte poslovanja samostalnih preduzetnika",
+    "stats": {
+      "categories": "Kategorija",
+      "servicesPerMonth": "Usluga mjesečno",
+      "members": "Članova",
+      "satisfaction": "Zadovoljstvo"
+    }
+  },
+  "grid": {
+    "badge": "Šta nudimo",
+    "title": "Detaljno o našim uslugama",
+    "description": "Sve usluge dostupne našim članovima - od administrativnih do međunarodne saradnje",
+    "ctaButton": "Zatraži uslugu",
+    "services": {
+      "administrative": {
+        "title": "Administrativne usluge",
+        "description": "Brzo i efikasno izdavanje svih potrebnih dokumenata i potvrda za vaše poslovanje",
+        "feature1": "Izdavanje potvrda o članstvu",
+        "feature2": "Uvjerenja o obavljanju djelatnosti",
+        "feature3": "Ovjeravanje dokumenata",
+        "feature4": "Preporuke za tendere i projekte"
+      },
+      "education": {
+        "title": "Edukacija i obuke",
+        "description": "Stručne radionice, seminari i online kursevi za kontinuirano usavršavanje",
+        "feature1": "Besplatni webinari za članove",
+        "feature2": "Seminari o poreskim propisima",
+        "feature3": "Digitalni marketing obuke",
+        "feature4": "Sertifikovani programi obuka"
+      },
+      "legal": {
+        "title": "Pravna podrška",
+        "description": "Stručna pravna pomoć i zastupanje u svim situacijama koje se tiču vašeg poslovanja",
+        "feature1": "Besplatne pravne konsultacije",
+        "feature2": "Izrada ugovora i sporazuma",
+        "feature3": "Zastupanje pred institucijama",
+        "feature4": "Rješavanje sporova"
+      },
+      "business": {
+        "title": "Poslovna podrška",
+        "description": "Pomoć u razvoju i rastu vašeg poslovanja kroz savjetovanje i mentorstvo",
+        "feature1": "Biznis konsultacije",
+        "feature2": "Pomoć u izradi biznis planova",
+        "feature3": "Marketing podrška",
+        "feature4": "Pristup poslovnim prilikama"
+      },
+      "international": {
+        "title": "Međunarodna saradnja",
+        "description": "Povezivanje sa stranim partnerima i pristup EU programima i fondovima",
+        "feature1": "EU projekti i fondovi",
+        "feature2": "Saradnja sa stranim komorama",
+        "feature3": "B2B matchmaking događaji",
+        "feature4": "Međunarodni sajmovi"
+      },
+      "consulting": {
+        "title": "Konsultantske usluge",
+        "description": "Individualne konsultacije sa stručnjacima iz različitih oblasti poslovanja",
+        "feature1": "Finansijsko savjetovanje",
+        "feature2": "Računovodstvena podrška",
+        "feature3": "HR konsultacije",
+        "feature4": "IT i digitalizacija"
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Cjenovnik",
+    "title": "Cijene usluga",
+    "description": "Transparentne cijene za sve naše usluge. Članovi komore ostvaruju popust na većinu usluga.",
+    "categories": {
+      "administrative": {
+        "title": "Administrativne usluge",
+        "item1": "Potvrda o članstvu",
+        "price1": "Besplatno",
+        "item2": "Uvjerenje o obavljanju djelatnosti",
+        "price2": "5 KM",
+        "item3": "Ovjeravanje dokumenata",
+        "price3": "3 KM",
+        "item4": "Preporuka za tendere",
+        "price4": "10 KM"
+      },
+      "education": {
+        "title": "Edukacija i obuke",
+        "item1": "Webinari (za članove)",
+        "price1": "Besplatno",
+        "item2": "Jednodnevni seminar",
+        "price2": "Od 30 KM",
+        "item3": "Višednevna obuka",
+        "price3": "Od 100 KM"
+      },
+      "legal": {
+        "title": "Pravna podrška",
+        "item1": "Pravne konsultacije (za članove)",
+        "price1": "Besplatno",
+        "item2": "Izrada ugovora",
+        "price2": "Od 50 KM",
+        "item3": "Zastupanje pred institucijama",
+        "price3": "Po dogovoru"
+      }
+    },
+    "note": {
+      "title": "Napomena o cijenama",
+      "description": "Cijene su informativnog karaktera i mogu varirati u zavisnosti od složenosti usluge. Članovi komore ostvaruju popuste na većinu usluga. Za detaljne informacije o cijenama kontaktirajte našu administrativnu službu."
+    }
+  },
+  "contact": {
+    "title": "Trebate pomoć ili dodatne informacije?",
+    "description": "Naš tim je tu da odgovori na sva vaša pitanja i pomogne vam da odaberete pravu uslugu",
+    "methods": {
+      "phone": {
+        "title": "Pozovite nas",
+        "description": "Radnim danima 08:00-16:00"
+      },
+      "email": {
+        "title": "Pošaljite email",
+        "description": "Odgovaramo u roku od 24h"
+      },
+      "visit": {
+        "title": "Posjetite nas",
+        "description": "Banja Luka"
+      },
+      "hours": {
+        "title": "Radno vrijeme",
+        "content": "Pon - Pet, 08:00 - 16:00",
+        "description": "Vikendom zatvoreno"
+      }
+    },
+    "cta": {
+      "title": "Spremni da iskoristite naše usluge?",
+      "description": "Kontaktirajte nas danas i saznajte kako možemo pomoći vašem poslovanju",
+      "primary": "Kontakt forma",
+      "secondary": "Pozovite odmah"
+    }
+  }
+}
+
 }

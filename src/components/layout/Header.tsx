@@ -61,6 +61,7 @@ export default function Header({ lang }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
   
   const t = translations[lang];
 
@@ -105,7 +106,7 @@ export default function Header({ lang }: HeaderProps) {
                 href={`/sr`}
                 className={`px-3 py-1 rounded-md font-semibold transition-all ${
                   lang === 'sr' 
-                    ? 'bg-accent text-neutral-900 shadow-lg' 
+                    ? 'bg-accent text-white shadow-lg' 
                     : 'text-neutral-300 hover:text-white hover:bg-neutral-700'
                 }`}
               >
@@ -115,7 +116,7 @@ export default function Header({ lang }: HeaderProps) {
                 href={`/en`}
                 className={`px-3 py-1 rounded-md font-semibold transition-all ${
                   lang === 'en' 
-                    ? 'bg-accent text-neutral-900 shadow-lg' 
+                    ? 'bg-accent text-white shadow-lg' 
                     : 'text-neutral-300 hover:text-white hover:bg-neutral-700'
                 }`}
               >
@@ -187,7 +188,7 @@ export default function Header({ lang }: HeaderProps) {
                       transition={{ duration: 0.2 }}
                       className="absolute top-full left-0 mt-2 bg-white shadow-2xl rounded-xl border border-neutral-100 overflow-hidden min-w-[280px]"
                     >
-                      {submenuItems.map((item, index) => {
+                      {submenuItems.map((item) => {
                         const Icon = item.icon;
                         return (
                           <Link
@@ -248,22 +249,84 @@ export default function Header({ lang }: HeaderProps) {
                 className="lg:hidden overflow-hidden"
               >
                 <div className="flex flex-col gap-2 py-4 border-t border-neutral-200 mt-4">
-                  <Link href={`/${lang}`} className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition">
+                  <Link 
+                    href={`/${lang}`} 
+                    className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     {t.nav.home}
                   </Link>
-                  <Link href={`/${lang}/o-komori`} className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition">
-                    {t.nav.about}
-                  </Link>
-                  <Link href={`/${lang}/usluge`} className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition">
+                  
+                  {/* Mobile About Submenu */}
+                  <div>
+                    <button
+                      onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
+                      className="w-full flex items-center justify-between px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition"
+                    >
+                      {t.nav.about}
+                      <ChevronDown 
+                        size={18} 
+                        className={`transition-transform duration-300 ${isMobileAboutOpen ? 'rotate-180' : ''}`} 
+                      />
+                    </button>
+                    
+                    <AnimatePresence>
+                      {isMobileAboutOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden ml-4 mt-1"
+                        >
+                          {submenuItems.map((item) => {
+                            const Icon = item.icon;
+                            return (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="flex items-center gap-3 px-4 py-2.5 text-neutral-700 hover:text-primary hover:bg-primary/5 rounded-lg transition-all"
+                                onClick={() => {
+                                  setIsMobileMenuOpen(false);
+                                  setIsMobileAboutOpen(false);
+                                }}
+                              >
+                                <Icon size={18} className="text-primary" />
+                                <span className="text-sm">{item.label}</span>
+                              </Link>
+                            );
+                          })}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+
+                  <Link 
+                    href={`/${lang}/usluge`} 
+                    className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     {t.nav.services}
                   </Link>
-                  <Link href={`/${lang}/clanstvo`} className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition">
+                  <Link 
+                    href={`/${lang}/clanstvo`} 
+                    className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     {t.nav.membership}
                   </Link>
-                  <Link href={`/${lang}/vijesti`} className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition">
+                  <Link 
+                    href={`/${lang}/vijesti`} 
+                    className="px-4 py-3 text-neutral-900 hover:bg-primary/5 rounded-lg font-medium transition"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     {t.nav.news}
                   </Link>
-                  <Link href={`/${lang}/kontakt`} className="mx-4 mt-2 px-4 py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg text-center">
+                  <Link 
+                    href={`/${lang}/kontakt`} 
+                    className="mx-4 mt-2 px-4 py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg text-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
                     {t.nav.contact}
                   </Link>
                 </div>

@@ -15,42 +15,43 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  // Kreiraj array od servisa sa ikonama i bojama
   const services = [
     {
       icon: FileText,
-      title: dict.services.list.administrative.title,
-      description: dict.services.list.administrative.description,
-      color: 'bg-blue-500'
+      title: dict.servicesPreview.list.administrative.title,
+      description: dict.servicesPreview.list.administrative.description,
+      color: 'bg-gradient-to-br from-blue-500 to-blue-600'
     },
     {
       icon: GraduationCap,
-      title: dict.services.list.education.title,
-      description: dict.services.list.education.description,
-      color: 'bg-green-500'
+      title: dict.servicesPreview.list.education.title,
+      description: dict.servicesPreview.list.education.description,
+      color: 'bg-gradient-to-br from-purple-500 to-purple-600'
     },
     {
       icon: Scale,
-      title: dict.services.list.legal.title,
-      description: dict.services.list.legal.description,
-      color: 'bg-purple-500'
+      title: dict.servicesPreview.list.legal.title,
+      description: dict.servicesPreview.list.legal.description,
+      color: 'bg-gradient-to-br from-red-500 to-red-600'
     },
     {
       icon: Briefcase,
-      title: dict.services.list.business.title,
-      description: dict.services.list.business.description,
-      color: 'bg-orange-500'
+      title: dict.servicesPreview.list.business.title,
+      description: dict.servicesPreview.list.business.description,
+      color: 'bg-gradient-to-br from-green-500 to-green-600'
     },
     {
       icon: Globe,
-      title: dict.services.list.international.title,
-      description: dict.services.list.international.description,
-      color: 'bg-cyan-500'
+      title: dict.servicesPreview.list.international.title,
+      description: dict.servicesPreview.list.international.description,
+      color: 'bg-gradient-to-br from-cyan-500 to-cyan-600'
     },
     {
       icon: HeadphonesIcon,
-      title: dict.services.list.consulting.title,
-      description: dict.services.list.consulting.description,
-      color: 'bg-red-500'
+      title: dict.servicesPreview.list.consulting.title,
+      description: dict.servicesPreview.list.consulting.description,
+      color: 'bg-gradient-to-br from-orange-500 to-orange-600'
     }
   ];
 
@@ -70,35 +71,40 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2 }}
           >
-            {dict.services.badge}
+            {dict.servicesPreview.badge}
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-4">
-            {dict.services.title}
+            {dict.servicesPreview.title}
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            {dict.services.description}
+            {dict.servicesPreview.description}
           </p>
         </motion.div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              className="group bg-neutral-50 p-8 rounded-xl hover:bg-white hover:shadow-xl transition-all cursor-pointer border border-neutral-100"
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
-              whileHover={{ y: -10 }}
-            >
-              <div className={`${service.color} w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
-                <service.icon size={32} className="text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-neutral-900 mb-3">{service.title}</h3>
-              <p className="text-neutral-600 leading-relaxed">{service.description}</p>
-            </motion.div>
-          ))}
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <motion.div
+                key={index}
+                className="group bg-neutral-50 p-8 rounded-xl hover:bg-white hover:shadow-xl transition-all cursor-pointer border border-neutral-100"
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
+                whileHover={{ y: -10 }}
+              >
+                <div className={`${service.color} w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}>
+                  <Icon size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-neutral-600 leading-relaxed">{service.description}</p>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* CTA Button */}
@@ -112,7 +118,7 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
             href={`/${lang}/usluge`}
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-dark transition group shadow-lg hover:shadow-xl"
           >
-            {dict.services.cta}
+            {dict.servicesPreview.cta}
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>

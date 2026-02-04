@@ -1,60 +1,78 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 type FooterProps = {
   lang: 'sr' | 'en';
+  dict: any;
 };
 
-const translations = {
-  sr: {
-    footer: {
-      copyright: '© 2026 PKSP Banja Luka. Sva prava zadržana.',
-      address: 'Mladena Stojanovića 16, Banja Luka'
-    },
-    contact: {
-      phone: '+387 65 789 879',
-      email: 'info@pkspbl.com'
-    }
-  },
-  en: {
-    footer: {
-      copyright: '© 2026 PKSP Banja Luka. All rights reserved.',
-      address: 'Mladena Stojanovića 16, Banja Luka'
-    },
-    contact: {
-      phone: '+387 65 789 879',
-      email: 'info@pkspbl.com'
-    }
-  }
-};
-
-export default function Footer({ lang }: FooterProps) {
-  const t = translations[lang];
-
+export default function Footer({ lang, dict }: FooterProps) {
   return (
     <footer className="bg-neutral-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* Kontakt kolona */}
           <div>
-            <h3 className="text-xl font-bold mb-4 text-accent">Kontakt</h3>
+            <h3 className="text-xl font-bold mb-4 text-accent">
+              {dict.footer.sections.contact}
+            </h3>
             <div className="space-y-3">
-              <a href={`tel:${t.contact.phone}`} className="flex items-center gap-2 hover:text-accent transition">
+              <a 
+                href="tel:+38765789879" 
+                className="flex items-center gap-2 hover:text-accent transition"
+              >
                 <Phone size={18} />
-                <span>{t.contact.phone}</span>
+                <span>+387 65 789 879</span>
               </a>
-              <a href={`mailto:${t.contact.email}`} className="flex items-center gap-2 hover:text-accent transition">
+              <a 
+                href="mailto:info@pkspbl.com" 
+                className="flex items-center gap-2 hover:text-accent transition"
+              >
                 <Mail size={18} />
-                <span>{t.contact.email}</span>
+                <span>info@pkspbl.com</span>
               </a>
               <div className="flex items-start gap-2">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span>{t.footer.address}</span>
+                <span>{dict.footer.address}</span>
               </div>
+            </div>
+          </div>
+
+          {/* Brzi linkovi */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-accent">
+              {dict.footer.sections.quickLinks}
+            </h3>
+            <div className="space-y-2">
+              <Link href={`/${lang}/o-komori`} className="block hover:text-accent transition">
+                {dict.nav.about}
+              </Link>
+              <Link href={`/${lang}/usluge`} className="block hover:text-accent transition">
+                {dict.nav.services}
+              </Link>
+              <Link href={`/${lang}/clanstvo`} className="block hover:text-accent transition">
+                {dict.nav.membership}
+              </Link>
+              <Link href={`/${lang}/vijesti`} className="block hover:text-accent transition">
+                {dict.nav.news}
+              </Link>
+            </div>
+          </div>
+
+          {/* Radno vrijeme */}
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-accent">
+              {dict.footer.sections.workingHours}
+            </h3>
+            <div className="space-y-2 text-neutral-300">
+              <p>{dict.footer.workingHours.weekdays}</p>
+              <p>{dict.footer.workingHours.weekend}</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-neutral-800 pt-8 text-center text-neutral-400">
-          <p>{t.footer.copyright}</p>
+          <p>{dict.footer.copyright}</p>
         </div>
       </div>
     </footer>
