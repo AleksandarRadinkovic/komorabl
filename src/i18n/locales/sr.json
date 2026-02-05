@@ -487,6 +487,115 @@
       "secondary": "Pozovite odmah"
     }
   }
+},
+"aboutPage": {
+  "breadcrumb": {
+    "home": "Početna",
+    "about": "O komori"
+  },
+  "hero": {
+    "badge": "Tradicija od 1909. godine",
+    "title": "O Područnoj komori samostalnih preduzetnika",
+    "description": "Najstarija i najveća komorska regija u Republici Srpskoj sa preko 115 godina tradicije",
+    "stats": {
+      "founded": "Godina osnivanja",
+      "members": "Aktivnih članova",
+      "municipalities": "Gradova i opština",
+      "yearsExperience": "Godina iskustva"
+    }
+  },
+  "timeline": {
+    "badge": "Naša istorija",
+    "title": "Hronologija značajnih događaja",
+    "description": "Pregled najvažnijih trenutaka u razvoju naše komore kroz decenije",
+    "events": {
+      "event1": {
+        "title": "Osnivanje komore",
+        "description": "Osnovana Zanatska komora u Banja Luci, što predstavlja početak organizovanog udruživanja zanatsko-preduzetničkog sektora u regiji."
+      },
+      "event2": {
+        "title": "Poslijeratni razvoj",
+        "description": "Obnova rada komore nakon Drugog svjetskog rata. Komora postaje ključna institucija za koordinaciju zanatlija i malih preduzetnika."
+      },
+      "event3": {
+        "title": "Tranzicija i modernizacija",
+        "description": "Transformacija u Komoru samostalnih preduzetnika Republike Srpske. Adaptacija na tržišnu ekonomiju i nova zakonska regulativa."
+      },
+      "event4": {
+        "title": "Evropska integracija",
+        "description": "Početak aktivne saradnje sa evropskim komorskim organizacijama i učešće u EU projektima za razvoj preduzetništva."
+      },
+      "event5": {
+        "title": "Digitalna transformacija",
+        "description": "Uvođenje digitalnih usluga za članove, online platforme i modernizacija poslovnih procesa. Postajemo lider u digitalizaciji komorskih usluga."
+      }
+    }
+  },
+  "missionVision": {
+    "badge": "Naši ciljevi",
+    "title": "Misija, vizija i vrijednosti",
+    "mission": {
+      "title": "Misija",
+      "description": "Pružanje sveobuhvatne podrške samostalnim preduzetnicima kroz zaštitu njihovih interesa, edukaciju i stvaranje povoljnog poslovnog okruženja.",
+      "point1": "Zaštita prava i interesa članova",
+      "point2": "Stručna podrška i edukacija",
+      "point3": "Zastupanje pred institucijama"
+    },
+    "vision": {
+      "title": "Vizija",
+      "description": "Biti vodeća komorska organizacija koja prepoznaje potrebe članova i aktivno doprinosi razvoju preduzetništva u Republici Srpskoj.",
+      "point1": "Moderna i efikasna organizacija",
+      "point2": "Partner u rastu svakog člana",
+      "point3": "Most ka evropskom tržištu"
+    },
+    "values": {
+      "title": "Naše vrijednosti",
+      "value1": {
+        "title": "Integritet",
+        "description": "Transparentnost, poštenost i etičnost u svim aspektima rada"
+      },
+      "value2": {
+        "title": "Inovativnost",
+        "description": "Kontinuirano unapređenje usluga i prilagođavanje potrebama članova"
+      },
+      "value3": {
+        "title": "Partnerstvo",
+        "description": "Saradnja sa članovima, institucijama i međunarodnim organizacijama"
+      }
+    }
+  },
+  "euProjects": {
+    "badge": "Međunarodna saradnja",
+    "title": "EU projekti i inicijative",
+    "description": "Aktivno učestvujemo u evropskim projektima koji doprinose razvoju preduzetništva i jačanju kapaciteta naših članova",
+    "projects": {
+      "project1": {
+        "title": "IPA fondovi za MSP",
+        "description": "Projekat podrške malim i srednjim preduzećima kroz EU IPA fondove. Fokus na digitalizaciju i izvoznu orijentaciju.",
+        "status": "Aktivno"
+      },
+      "project2": {
+        "title": "Erasmus+ obuke",
+        "description": "Program razmjene znanja i iskustava sa evropskim komorama. Besplatne obuke za članove u oblasti preduzetništva.",
+        "status": "Aktivno"
+      },
+      "project3": {
+        "title": "COSME program",
+        "description": "Učešće u programu za konkurentnost malih i srednjih preduzeća. Pristup finansijama i novim tržištima.",
+        "status": "U pripremi"
+      },
+      "project4": {
+        "title": "Zelena tranzicija",
+        "description": "Projekat podrške prelaska na održive i ekološke poslovne prakse. Savjetovanje i finansijska podrška.",
+        "status": "U pripremi"
+      }
+    },
+    "cta": {
+      "title": "Zainteresovani ste za EU projekte?",
+      "description": "Kontaktirajte nas za više informacija o aktuelnim projektima i mogućnostima za vašu kompaniju",
+      "button": "Saznaj više"
+    }
+  }
 }
 
 }

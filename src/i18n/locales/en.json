@@ -487,6 +487,116 @@
       "secondary": "Call now"
     }
   }
+},
+"aboutPage": {
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About"
+  },
+  "hero": {
+    "badge": "Tradition since 1909",
+    "title": "About the Regional Chamber of Independent Entrepreneurs",
+    "description": "The oldest and largest chamber region in Republika Srpska with over 115 years of tradition",
+    "stats": {
+      "founded": "Year founded",
+      "members": "Active members",
+      "municipalities": "Cities and municipalities",
+      "yearsExperience": "Years of experience"
+    }
+  },
+  "timeline": {
+    "badge": "Our history",
+    "title": "Timeline of significant events",
+    "description": "Overview of the most important moments in the development of our chamber through the decades",
+    "events": {
+      "event1": {
+        "title": "Chamber founding",
+        "description": "The Crafts Chamber was established in Banja Luka, marking the beginning of organized association of the craft and entrepreneurial sector in the region."
+      },
+      "event2": {
+        "title": "Post-war development",
+        "description": "Restoration of chamber operations after World War II. The chamber becomes a key institution for coordinating craftsmen and small entrepreneurs."
+      },
+      "event3": {
+        "title": "Transition and modernization",
+        "description": "Transformation into the Chamber of Independent Entrepreneurs of Republika Srpska. Adaptation to market economy and new legal regulations."
+      },
+      "event4": {
+        "title": "European integration",
+        "description": "Beginning of active cooperation with European chamber organizations and participation in EU projects for entrepreneurship development."
+      },
+      "event5": {
+        "title": "Digital transformation",
+        "description": "Introduction of digital services for members, online platforms and modernization of business processes. We become a leader in digitalization of chamber services."
+      }
+    }
+  },
+  "missionVision": {
+    "badge": "Our goals",
+    "title": "Mission, vision and values",
+    "mission": {
+      "title": "Mission",
+      "description": "Providing comprehensive support to independent entrepreneurs through protection of their interests, education and creation of a favorable business environment.",
+      "point1": "Protection of members' rights and interests",
+      "point2": "Professional support and education",
+      "point3": "Representation before institutions"
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To be the leading chamber organization that recognizes members' needs and actively contributes to entrepreneurship development in Republika Srpska.",
+      "point1": "Modern and efficient organization",
+      "point2": "Partner in every member's growth",
+      "point3": "Bridge to European market"
+    },
+    "values": {
+      "title": "Our values",
+      "value1": {
+        "title": "Integrity",
+        "description": "Transparency, honesty and ethics in all aspects of work"
+      },
+      "value2": {
+        "title": "Innovation",
+        "description": "Continuous service improvement and adaptation to members' needs"
+      },
+      "value3": {
+        "title": "Partnership",
+        "description": "Cooperation with members, institutions and international organizations"
+      }
+    }
+  },
+  "euProjects": {
+    "badge": "International cooperation",
+    "title": "EU projects and initiatives",
+    "description": "We actively participate in European projects that contribute to entrepreneurship development and capacity building of our members",
+    "projects": {
+      "project1": {
+        "title": "IPA funds for SMEs",
+        "description": "Support project for small and medium enterprises through EU IPA funds. Focus on digitalization and export orientation.",
+        "status": "Active"
+      },
+      "project2": {
+        "title": "Erasmus+ training",
+        "description": "Knowledge and experience exchange program with European chambers. Free training for members in entrepreneurship.",
+        "status": "Active"
+      },
+      "project3": {
+        "title": "COSME program",
+        "description": "Participation in the program for competitiveness of small and medium enterprises. Access to finance and new markets.",
+        "status": "In preparation"
+      },
+      "project4": {
+        "title": "Green transition",
+        "description": "Support project for transition to sustainable and ecological business practices. Consulting and financial support.",
+        "status": "In preparation"
+      }
+    },
+    "cta": {
+      "title": "Interested in EU projects?",
+      "description": "Contact us for more information about current projects and opportunities for your company",
+      "button": "Learn more"
+    }
+  }
 }
+
 
 }
