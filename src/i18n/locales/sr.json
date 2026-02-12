@@ -596,6 +596,200 @@
       "button": "Saznaj više"
     }
   }
+},
+"istorijat": {
+  "breadcrumb": {
+    "home": "Početna",
+    "about": "O komori",
+    "history": "Istorijat"
+  },
+  "hero": {
+    "badge": "Naša istorija",
+    "title": "115 godina tradicije i razvoja",
+    "description": "Putovanje kroz vrijeme koje je oblikovalo najveću komorsku regiju u Republici Srpskoj",
+    "stats": {
+      "founded": "Godina osnivanja",
+      "years": "Godina tradicije",
+      "today": "Danas"
+    }
+  },
+  "timeline": {
+    "badge": "Detaljna hronologija",
+    "title": "Istorija kroz decenije",
+    "description": "Svaki period je donio jedinstvene izazove i dostignuća koja su oblikovala našu komoru",
+    "period1": {
+      "title": "Osnivanje i Prvi koraci",
+      "event1": "Osnivanje Zanatske komore u Banja Luci. Prvi koraci organizovanog udruživanja zanatlija i trgovaca u regiji.",
+      "event2": "Širenje djelatnosti komore. Obuhvaćeno 15 opština sa preko 500 članova.",
+      "event3": "Prva velika edukativna kampanja za zanatlije. Uvođenje modernih standarda rada."
+    },
+    "period2": {
+      "title": "Poslijeratna obnova i razvoj",
+      "event1": "Obnova rada komore nakon Drugog svjetskog rata. Novi početak za zanatsko-trgovački sektor.",
+      "event2": "Zlatna era zanatstva. Komora broji preko 3,000 aktivnih članova i pokreće brojne inicijative.",
+      "event3": "Modernizacija usluga i širenje međunarodne saradnje. Prvi kontakti sa evropskim komorama."
+    },
+    "period3": {
+      "title": "Tranzicija ka tržišnoj ekonomiji",
+      "event1": "Transformacija u Komoru samostalnih preduzetnika Republike Srpske. Adaptacija na nove zakonske okvire.",
+      "event2": "Digitalizacija procesa. Prvi online servisi za članove i elektronska arhiva.",
+      "event3": "Pristupanje evropskim komorskim mrežama. Početak aktivnog učešća u EU projektima."
+    },
+    "period4": {
+      "title": "Moderna era i evropske integracije",
+      "event1": "Članstvo u EUROCHAMBRES. Puna integracija u evropsku mrežu preduzetnika.",
+      "event2": "Lansiranje digitalnih platformi za članove. Potpuna digitalizacija administrativnih usluga.",
+      "event3": "Postajemo lider u inovacijama među komorama u regionu. Preko 11,000 aktivnih članova."
+    }
+  },
+  "gallery": {
+    "badge": "Značajni momenti",
+    "title": "Ključni događaji u našoj istoriji",
+    "description": "Fotografije i priče koje svjedoče o našem razvoju kroz vrijeme",
+    "highlight1": {
+      "title": "Osnivanje komore 1909.",
+      "description": "Istorijski trenutak kada je osnovana Zanatska komora u Banja Luci, postavljajući temelje za organizovano preduzetništvo u regiji."
+    },
+    "highlight2": {
+      "title": "Obnova nakon rata",
+      "description": "Period obnove i rasta nakon Drugog svjetskog rata, kada komora postaje stub podrške za zanatlije i trgovce."
+    },
+    "highlight3": {
+      "title": "Transformacija u Komoru SP",
+      "description": "Prelazak na tržišnu ekonomiju i transformacija u modernu Komoru samostalnih preduzetnika."
+    },
+    "highlight4": {
+      "title": "Digitalna era",
+      "description": "Uvođenje najsavremenijih tehnologija i digitalnih platformi za pružanje usluga članovima."
+    },
+    "legacy": {
+      "title": "Naše naslijeđe",
+      "description": "Više od jednog vijeka iskustva, znanja i predanosti razvoju preduzetništva u našoj regiji. Svaka generacija je dala svoj doprinos, gradeći osnove za budućnost kakvu danas poznajemo."
+    }
+  }
+},
+"organi": {
+  "breadcrumb": {
+    "home": "Početna",
+    "about": "O komori",
+    "bodies": "Organi komore"
+  },
+  "hero": {
+    "badge": "Upravljačka struktura",
+    "title": "Organi komore",
+    "description": "Transparentnost, profesionalnost i predanost interesima naših članova"
+  },
+  "leadership": {
+    "badge": "Rukovodstvo",
+    "title": "Predsjedništvo komore",
+    "description": "Izabrani predstavnici koji vode komoru i zastupaju interese svih samostalnih preduzetnika",
+    "president": {
+      "name": "Marko Marković",
+      "position": "Predsjednik Komore",
+      "bio": "Sa preko 20 godina iskustva u preduzetništvu, vodi komoru sa vizijom modernizacije i digitalizacije usluga. Predano radi na jačanju pozicije samostalnih preduzetnika u ekonomskom sistemu Republike Srpske."
+    },
+    "vicePresident1": {
+      "name": "Jelena Jovanović",
+      "position": "Potpredsjednik Komore",
+      "bio": "Fokusirana na edukaciju i razvoj preduzetničkih kompetencija, koordinira programe obuke i mentorstva za članove. Stručnjak za zanatske djelatnosti sa dugogodišnjim iskustvom."
+    },
+    "vicePresident2": {
+      "name": "Nikola Nikolić",
+      "position": "Potpredsjednik Komore",
+      "bio": "Odgovoran za međunarodnu saradnju i evropske integracije. Aktivno učestvuje u projektima koji povezuju domaće preduzetnike sa evropskim tržištima i prilikama."
+    }
+  },
+  "boards": {
+    "badge": "Organi upravljanja",
+    "title": "Struktura upravljanja",
+    "description": "Četiri ključna organa koji osiguravaju demokratsko i transparentno funkcionisanje komore",
+    "responsibilitiesLabel": "Odgovornosti",
+    "assembly": {
+      "name": "Skupština Komore",
+      "description": "Najviše tijelo komore koje donosi ključne odluke o djelovanju, razvoju i politici komore.",
+      "members": "51 delegat",
+      "resp1": "Usvajanje statuta i drugih ključnih akata komore",
+      "resp2": "Donošenje godišnjeg programa rada i finansijskog plana",
+      "resp3": "Izbor članova Upravnog i Nadzornog odbora",
+      "resp4": "Razmatranje izvještaja o radu i finansijskom poslovanju"
+    },
+    "supervisory": {
+      "name": "Nadzorni odbor",
+      "description": "Kontrolno tijelo koje nadgleda zakonitost i pravilnost rada komore i njenih organa.",
+      "members": "5 članova",
+      "resp1": "Nadzor nad radom Upravnog odbora i poslovanjem komore",
+      "resp2": "Kontrola finansijskog poslovanja i izvršenja budžeta",
+      "resp3": "Podnošenje izvještaja Skupštini o zapažanjima i preporukama",
+      "resp4": "Zaštita interesa članova i pravilan rad organa komore"
+    },
+    "management": {
+      "name": "Upravni odbor",
+      "description": "Izvršno tijelo koje upravlja radom komore između sjednica Skupštine.",
+      "members": "7 članova",
+      "resp1": "Izvršavanje odluka Skupštine i realizacija programa rada",
+      "resp2": "Upravljanje finansijskim sredstvima i imovinom komore",
+      "resp3": "Predstavljanje i zastupanje interesa komore",
+      "resp4": "Donošenje poslovnih odluka i praćenje operativnog rada"
+    },
+    "arbitration": {
+      "name": "Arbitražni sud",
+      "description": "Nezavisno tijelo za rješavanje sporova između članova komore u skladu sa zakonom.",
+      "members": "3 arbitra",
+      "resp1": "Rješavanje privrednih sporova između članova komore",
+      "resp2": "Arbitražno postupanje po ugovorima članova koji sadrže arbitražnu klauzulu",
+      "resp3": "Medijacija i mirno rješavanje poslovnih nesporazuma"
+    },
+    "governance": {
+      "title": "Demokratsko upravljanje",
+      "description": "Svi organi komore biraju se demokratski od strane članova, osiguravajući da glas svakog preduzetnika bude čut. Rad organa je transparentan i u skladu sa zakonom i statutom komore."
+    }
+  }
+},
+"izvjestaji": {
+  "breadcrumb": {
+    "home": "Početna",
+    "about": "O komori",
+    "reports": "Izvještaji"
+  },
+  "hero": {
+    "badge": "Transparentnost rada",
+    "title": "Izvještaji o radu komore",
+    "description": "Godišnji izvještaji o aktivnostima, finansijskom poslovanju i rezultatima rada komore"
+  },
+  "reports": {
+    "badge": "Arhiva izvještaja",
+    "title": "Godišnji izvještaji",
+    "description": "Preuzmite detaljne izvještaje o radu komore za svaku godinu",
+    "pages": "stranica",
+    "download": "Preuzmi",
+    "report2024": {
+      "title": "Izvještaj o radu za 2024. godinu",
+      "description": "Kompletna analiza aktivnosti, projekata i finansijskog poslovanja komore tokom 2024. godine. Pregled članstva, edukativnih programa i međunarodne saradnje."
+    },
+    "report2023": {
+      "title": "Izvještaj o radu za 2023. godinu",
+      "description": "Detaljni prikaz svih aktivnosti komore, statistika članstva, realizovanih projekata i finansijskog izvještaja za 2023. godinu."
+    },
+    "report2022": {
+      "title": "Izvještaj o radu za 2022. godinu",
+      "description": "Godišnji pregled rada komore sa fokusom na nove inicijative, rast članstva i uspješno realizovane projekte tokom 2022. godine."
+    },
+    "report2021": {
+      "title": "Izvještaj o radu za 2021. godinu",
+      "description": "Izvještaj o aktivnostima komore u 2021. godini, uključujući statistiku, finansijske podatke i pregled najvažnijih dostignuća."
+    },
+    "report2020": {
+      "title": "Izvještaj o radu za 2020. godinu",
+      "description": "Godišnji izvještaj za 2020. godinu sa detaljnim prikazom rada komore u izazovnim uslovima pandemije COVID-19."
+    },
+    "info": {
+      "title": "Transparentno poslovanje",
+      "description": "Svi izvještaji prolaze reviziju Nadzornog odbora i usvaja ih Skupština komore. Dostupni su javnosti u skladu sa principima transparentnosti i odgovornosti."
+    }
+  }
 }
+
+
+
 
 }

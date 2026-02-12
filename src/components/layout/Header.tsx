@@ -25,7 +25,6 @@ const translations = {
       history: 'Istorijat',
       organs: 'Organi komore',
       reports: 'Izvještaji',
-      area: 'Pokriveno područje'
     },
     contact: {
       phone: '+387 65 789 879',
@@ -47,7 +46,6 @@ const translations = {
       history: 'History',
       organs: 'Chamber Bodies',
       reports: 'Reports',
-      area: 'Covered Area'
     },
     contact: {
       phone: '+387 65 789 879',
@@ -78,7 +76,6 @@ export default function Header({ lang }: HeaderProps) {
     { icon: History, label: t.submenu.history, href: `/${lang}/o-komori/istorijat` },
     { icon: Users, label: t.submenu.organs, href: `/${lang}/o-komori/organi` },
     { icon: FileText, label: t.submenu.reports, href: `/${lang}/o-komori/izvjestaji` },
-    { icon: MapPin, label: t.submenu.area, href: `/${lang}/o-komori/podrucje` },
   ];
 
   return (

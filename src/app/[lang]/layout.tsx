@@ -31,14 +31,14 @@ export default async function RootLayout({
     notFound();
   }
 
-  const dict = await getDictionary(lang); // ← DODAJ OVO
+  const dict = await getDictionary(lang); 
 
   return (
     <html lang={lang}>
       <body className="antialiased">
         <Header lang={lang} />
         <main className="min-h-screen">{children}</main>
-        <Footer lang={lang} dict={dict} /> {/* ← PROSLEDI dict */}
+        <Footer lang={lang} dict={dict} /> 
       </body>
     </html>
   );

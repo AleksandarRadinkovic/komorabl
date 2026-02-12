@@ -596,7 +596,199 @@
       "button": "Learn more"
     }
   }
+},
+"istorijat": {
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About",
+    "history": "History"
+  },
+  "hero": {
+    "badge": "Our history",
+    "title": "115 years of tradition and development",
+    "description": "A journey through time that shaped the largest chamber region in Republika Srpska",
+    "stats": {
+      "founded": "Year founded",
+      "years": "Years of tradition",
+      "today": "Today"
+    }
+  },
+  "timeline": {
+    "badge": "Detailed chronology",
+    "title": "History through decades",
+    "description": "Each period brought unique challenges and achievements that shaped our chamber",
+    "period1": {
+      "title": "Foundation and first steps",
+      "event1": "Founding of the Crafts Chamber in Banja Luka. First steps of organized association of craftsmen and traders in the region.",
+      "event2": "Expansion of chamber activities. Covered 15 municipalities with over 500 members.",
+      "event3": "First major educational campaign for craftsmen. Introduction of modern work standards."
+    },
+    "period2": {
+      "title": "Post-war reconstruction and development",
+      "event1": "Restoration of chamber operations after World War II. New beginning for the craft and trade sector.",
+      "event2": "Golden era of craftsmanship. Chamber counts over 3,000 active members and launches numerous initiatives.",
+      "event3": "Modernization of services and expansion of international cooperation. First contacts with European chambers."
+    },
+    "period3": {
+      "title": "Transition to market economy",
+      "event1": "Transformation into the Chamber of Independent Entrepreneurs of Republika Srpska. Adaptation to new legal frameworks.",
+      "event2": "Process digitalization. First online services for members and electronic archive.",
+      "event3": "Joining European chamber networks. Beginning of active participation in EU projects."
+    },
+    "period4": {
+      "title": "Modern era and European integration",
+      "event1": "Membership in EUROCHAMBRES. Full integration into European entrepreneur network.",
+      "event2": "Launch of digital platforms for members. Complete digitalization of administrative services.",
+      "event3": "We become a leader in innovations among regional chambers. Over 11,000 active members."
+    }
+  },
+  "gallery": {
+    "badge": "Significant moments",
+    "title": "Key events in our history",
+    "description": "Photos and stories that witness our development through time",
+    "highlight1": {
+      "title": "Chamber founding 1909",
+      "description": "Historic moment when the Crafts Chamber was founded in Banja Luka, laying the foundation for organized entrepreneurship in the region."
+    },
+    "highlight2": {
+      "title": "Post-war reconstruction",
+      "description": "Period of reconstruction and growth after World War II, when the chamber becomes a pillar of support for craftsmen and traders."
+    },
+    "highlight3": {
+      "title": "Transformation into Chamber of IE",
+      "description": "Transition to market economy and transformation into modern Chamber of Independent Entrepreneurs."
+    },
+    "highlight4": {
+      "title": "Digital era",
+      "description": "Introduction of cutting-edge technologies and digital platforms for providing services to members."
+    },
+    "legacy": {
+      "title": "Our legacy",
+      "description": "More than a century of experience, knowledge and dedication to entrepreneurship development in our region. Each generation contributed, building foundations for the future we know today."
+    }
+  }
+},
+"organi": {
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About",
+    "bodies": "Chamber Bodies"
+  },
+  "hero": {
+    "badge": "Management structure",
+    "title": "Chamber Bodies",
+    "description": "Transparency, professionalism and dedication to our members' interests"
+  },
+  "leadership": {
+    "badge": "Leadership",
+    "title": "Chamber Presidency",
+    "description": "Elected representatives who lead the chamber and represent the interests of all independent entrepreneurs",
+    "president": {
+      "name": "Marko Marković",
+      "position": "Chamber President",
+      "bio": "With over 20 years of experience in entrepreneurship, he leads the chamber with a vision of modernization and digitalization of services. Dedicated to strengthening the position of independent entrepreneurs in the economic system of Republika Srpska."
+    },
+    "vicePresident1": {
+      "name": "Jelena Jovanović",
+      "position": "Chamber Vice President",
+      "bio": "Focused on education and development of entrepreneurial competencies, she coordinates training programs and mentorship for members. Expert in craft activities with many years of experience."
+    },
+    "vicePresident2": {
+      "name": "Nikola Nikolić",
+      "position": "Chamber Vice President",
+      "bio": "Responsible for international cooperation and European integration. Actively participates in projects that connect domestic entrepreneurs with European markets and opportunities."
+    }
+  },
+  "boards": {
+    "badge": "Governing bodies",
+    "title": "Management structure",
+    "description": "Four key bodies that ensure democratic and transparent functioning of the chamber",
+    "responsibilitiesLabel": "Responsibilities",
+    "assembly": {
+      "name": "Chamber Assembly",
+      "description": "The highest body of the chamber that makes key decisions about the chamber's operations, development and policy.",
+      "members": "51 delegates",
+      "resp1": "Adoption of the statute and other key chamber acts",
+      "resp2": "Adoption of annual work program and financial plan",
+      "resp3": "Election of Management and Supervisory Board members",
+      "resp4": "Consideration of reports on work and financial operations"
+    },
+    "supervisory": {
+      "name": "Supervisory Board",
+      "description": "Control body that oversees the legality and regularity of the chamber's work and its bodies.",
+      "members": "5 members",
+      "resp1": "Supervision of Management Board work and chamber operations",
+      "resp2": "Control of financial operations and budget execution",
+      "resp3": "Submission of reports to the Assembly with observations and recommendations",
+      "resp4": "Protection of members' interests and proper work of chamber bodies"
+    },
+    "management": {
+      "name": "Management Board",
+      "description": "Executive body that manages the chamber's work between Assembly sessions.",
+      "members": "7 members",
+      "resp1": "Implementation of Assembly decisions and realization of work program",
+      "resp2": "Management of financial resources and chamber property",
+      "resp3": "Representation and advocacy of chamber interests",
+      "resp4": "Making business decisions and monitoring operational work"
+    },
+    "arbitration": {
+      "name": "Arbitration Court",
+      "description": "Independent body for resolving disputes between chamber members in accordance with the law.",
+      "members": "3 arbitrators",
+      "resp1": "Resolution of commercial disputes between chamber members",
+      "resp2": "Arbitration proceedings under member contracts containing arbitration clause",
+      "resp3": "Mediation and peaceful resolution of business disagreements"
+    },
+    "governance": {
+      "title": "Democratic governance",
+      "description": "All chamber bodies are elected democratically by members, ensuring that every entrepreneur's voice is heard. The work of bodies is transparent and in accordance with law and chamber statute."
+    }
+  }
+},
+"izvjestaji": {
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About",
+    "reports": "Reports"
+  },
+  "hero": {
+    "badge": "Work transparency",
+    "title": "Chamber annual reports",
+    "description": "Annual reports on activities, financial operations and chamber work results"
+  },
+  "reports": {
+    "badge": "Reports archive",
+    "title": "Annual reports",
+    "description": "Download detailed reports on chamber activities for each year",
+    "pages": "pages",
+    "download": "Download",
+    "report2024": {
+      "title": "Annual Report for 2024",
+      "description": "Complete analysis of activities, projects and financial operations of the chamber during 2024. Overview of membership, educational programs and international cooperation."
+    },
+    "report2023": {
+      "title": "Annual Report for 2023",
+      "description": "Detailed presentation of all chamber activities, membership statistics, implemented projects and financial report for 2023."
+    },
+    "report2022": {
+      "title": "Annual Report for 2022",
+      "description": "Annual overview of chamber work focusing on new initiatives, membership growth and successfully implemented projects during 2022."
+    },
+    "report2021": {
+      "title": "Annual Report for 2021",
+      "description": "Report on chamber activities in 2021, including statistics, financial data and overview of major achievements."
+    },
+    "report2020": {
+      "title": "Annual Report for 2020",
+      "description": "Annual report for 2020 with detailed presentation of chamber work under challenging COVID-19 pandemic conditions."
+    },
+    "info": {
+      "title": "Transparent operations",
+      "description": "All reports undergo Supervisory Board audit and are adopted by the Chamber Assembly. They are publicly available in accordance with transparency and accountability principles."
+    }
+  }
 }
+
 
 
 }
