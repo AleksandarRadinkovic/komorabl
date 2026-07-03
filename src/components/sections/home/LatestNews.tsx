@@ -1,51 +1,48 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { urlFor } from '@/sanity/lib/image';
+
+interface Post {
+  _id: string;
+  title: string;
+  slug: { current: string };
+  publishedAt: string;
+  excerpt?: string;
+  mainImage?: any;
+  category?: string;
+}
 
 interface LatestNewsProps {
   dict: any;
   lang: string;
+  posts: Post[];
 }
 
-export default function LatestNews({ dict, lang }: LatestNewsProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+function formatDate(dateStr: string) {
+  try {
+    return new Date(dateStr).toLocaleDateString('sr-Latn-BA', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
+  } catch {
+    return dateStr;
+  }
+}
 
-  const newsItems = [
-    {
-      id: 1,
-      title: dict.news.mockData.item1.title,
-      excerpt: dict.news.mockData.item1.excerpt,
-      date: '15.01.2026',
-      readTime: '5 min',
-      category: dict.news.categories.news
-    },
-    {
-      id: 2,
-      title: dict.news.mockData.item2.title,
-      excerpt: dict.news.mockData.item2.excerpt,
-      date: '12.01.2026',
-      readTime: '4 min',
-      category: dict.news.categories.education
-    },
-    {
-      id: 3,
-      title: dict.news.mockData.item3.title,
-      excerpt: dict.news.mockData.item3.excerpt,
-      date: '10.01.2026',
-      readTime: '6 min',
-      category: dict.news.categories.events
-    }
-  ];
+export default function LatestNews({ dict, lang, posts }: LatestNewsProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
     <section ref={ref} className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -69,51 +66,54 @@ export default function LatestNews({ dict, lang }: LatestNewsProps) {
           </p>
         </motion.div>
 
-        {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {newsItems.map((item, index) => (
+          {posts.map((post, index) => (
             <motion.article
-              key={item.id}
+              key={post._id}
               className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all cursor-pointer"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
               whileHover={{ y: -10 }}
             >
-              {/* Image placeholder */}
               <div className="relative h-48 bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold opacity-20">
-                  {item.id}
-                </div>
-                {/* Badge uz sliku - gore lijevo */}
+                {post.mainImage ? (
+                  <Image
+                    src={urlFor(post.mainImage).width(600).height(400).url()}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-white text-6xl font-bold opacity-20">
+                    {index + 1}
+                  </div>
+                )}
                 <div className="absolute top-4 left-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
-                  {item.category}
+                  {dict.news.categories.news}
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <div className="flex items-center gap-4 text-sm text-neutral-500 mb-3">
                   <div className="flex items-center gap-1">
                     <Calendar size={16} />
-                    <span>{item.date}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock size={16} />
-                    <span>{item.readTime}</span>
+                    <span>{formatDate(post.publishedAt)}</span>
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary transition-colors">
-                  {item.title}
+                <h3 className="text-xl font-bold text-neutral-900 mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                  {post.title}
                 </h3>
 
-                <p className="text-neutral-600 mb-4 line-clamp-3">
-                  {item.excerpt}
-                </p>
+                {post.excerpt && (
+                  <p className="text-neutral-600 mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                )}
 
                 <Link
-                  href={`/${lang}/vijesti/${item.id}`}
+                  href={`/${lang}/vijesti/${post.slug.current}`}
                   className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
                 >
                   {dict.news.readMore}
@@ -124,7 +124,6 @@ export default function LatestNews({ dict, lang }: LatestNewsProps) {
           ))}
         </div>
 
-        {/* CTA Button - BIJELI TEKST */}
         <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}

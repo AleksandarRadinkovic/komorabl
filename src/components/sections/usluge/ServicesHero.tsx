@@ -131,7 +131,7 @@ export default function ServicesHero({ dict, lang }: ServicesHeroProps) {
             {[
               { number: '6+', label: dict.hero.stats.categories },
               { number: '500+', label: dict.hero.stats.servicesPerMonth },
-              { number: '11,000+', label: dict.hero.stats.members },
+              { number: '11.500', label: dict.hero.stats.members },
               { number: '100%', label: dict.hero.stats.satisfaction }
             ].map((stat, index) => (
               <motion.div

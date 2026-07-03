@@ -20,10 +20,6 @@ export default function FAQSection({ dict }: FAQSectionProps) {
       answer: dict.faq.items.item1.answer
     },
     {
-      question: dict.faq.items.item2.question,
-      answer: dict.faq.items.item2.answer
-    },
-    {
       question: dict.faq.items.item3.question,
       answer: dict.faq.items.item3.answer
     },

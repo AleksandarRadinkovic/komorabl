@@ -13,22 +13,22 @@
     "description": "Support and protection of entrepreneurs' interests in Republika Srpska",
     "badge": "Supporting Entrepreneurship in Republika Srpska",
     "stats": {
-      "members": "11,000+",
+      "members": "11,500",
       "membersLabel": "Members",
       "municipalities": "15",
       "municipalitiesLabel": "Cities and Municipalities",
       "years": "100+",
       "yearsLabel": "Years of Experience"
     },
-    "cta": "Start Procedure",
-    "ctaSecondary": "Learn More"
+    "cta": "About Chamber",
+    "ctaSecondary": "Important Documents"
   },
   "about": {
     "badge": "About Us",
     "title": "A Tradition of More Than 100 Years",
     "description1": "The Regional Chamber of Independent Entrepreneurs Banja Luka is an independent, professional, non-governmental and non-profit organization that unites independent entrepreneurs from 15 cities and municipalities in the Banja Luka region.",
     "description2": "Our chamber provides comprehensive support to entrepreneurs through education, consulting and protection of their business interests. With a tradition dating back to 1909, we continue to be a pillar of support for the entrepreneurial community.",
-    "description3": "As part of the European network of entrepreneurs, we actively participate in international projects and EU programs. Contact us for information about current projects and cooperation opportunities.",
+    "description3": "As part of the European entrepreneurship network",
     "cta": "Learn More",
     "ctaProjects": "EU Projects",
     "features": {
@@ -37,12 +37,12 @@
         "description": "More than 115 years of tradition and support for entrepreneurs"
       },
       "members": {
-        "title": "11,000+ Members",
+        "title": "11,500 Members",
         "description": "Largest chamber region in Republika Srpska"
       },
       "europe": {
         "title": "EU Network",
-        "description": "Part of the European network of entrepreneurs and EU projects"
+        "description": "As part of the European entrepreneurship network"
       },
       "mission": {
         "title": "Our Mission",
@@ -113,7 +113,7 @@
     "description": "Join the largest chamber region in Republika Srpska and enjoy all membership benefits",
     "benefit1": "Free legal consultations",
     "benefit2": "Discounts on education and training",
-    "benefit3": "Networking with 11,000+ members",
+    "benefit3": "Networking with 11,500 members",
     "benefit4": "Business development support",
     "primaryCta": "Become a Member",
     "secondaryCta": "Contact Us"
@@ -124,7 +124,7 @@
     "quickLinks": "Quick Links",
     "workingHours": "Working Hours"
   },
-  "address": "Mladena Stojanovića 16, Banja Luka",
+  "address": "Veselina Masleše 34, Banja Luka",
   "workingHours": {
     "weekdays": "Mon - Fri: 08:00 - 16:00",
     "weekend": "Sat - Sun: Closed"
@@ -135,7 +135,7 @@
   "metadata": {
     "home": {
       "title": "PKSP Banja Luka - Chamber of Independent Entrepreneurs",
-      "description": "The largest chamber region in Republika Srpska with over 11,000 members. Support and protection of independent entrepreneurs' interests."
+      "description": "The largest chamber region in Republika Srpska with over 11,500 members. Support and protection of independent entrepreneurs' interests."
     }
   },
 "contact": {
@@ -222,13 +222,13 @@
     "membership": "Membership"
   },
   "hero": {
-    "badge": "11,000+ active members",
-    "title": "Automatic Membership for All Entrepreneurs",
-    "description": "By registering your independent business in the Banja Luka region, you automatically become a member of our chamber with all benefits",
+    "badge": "11,500 active members",
+    "title": "How to Become a Chamber Member",
+    "description": "Under the Law on Independent Entrepreneurs, every registered independent entrepreneur from our region is an obligatory member of the Regional Chamber of Independent Entrepreneurs Banja Luka.",
     "point1": "No additional costs",
     "point2": "Automatic registration",
     "point3": "Instant access to benefits",
-    "cta": "Contact Us"
+    "cta": "Membership Fee Payment Instructions"
   },
   "automatic": {
     "badge": "How it works",
@@ -266,7 +266,7 @@
       },
       "networking": {
         "title": "Networking",
-        "description": "Connect with 11,000+ entrepreneurs, business events, and B2B meetings"
+        "description": "Connect with 11,500 entrepreneurs, business events, and B2B meetings"
       },
       "business": {
         "title": "Business Support",
@@ -290,17 +290,17 @@
       "step1": {
         "title": "Prepare Documentation",
         "description": "Obtain the necessary documents",
-        "details": "ID card, unique citizen number (JMBG), birth certificate extract, and proof of residential address"
+        "details": "Copy of ID card, court certificate confirming no outstanding financial obligations and no ban on performing business activity, tax clearance certificate, completed SP1 form."
       },
       "step2": {
         "title": "Submit Application",
-        "description": "Submit request to the Agency",
-        "details": "You can submit a registration request in person at the Registration Agency or electronically via e-Register. You need to define the activity you will perform"
+        "description": "Submit application to the local self-government unit",
+        "details": "Submit the registration application to the relevant local self-government unit in your area."
       },
       "step3": {
         "title": "Wait for Approval",
-        "description": "Approval process",
-        "details": "The Registration Agency processes your request (usually 1-3 business days). After approval, you are automatically registered with our chamber"
+        "description": "After submission, wait a few days for approval.",
+        "details": "After the application is submitted, the relevant authority processes the documentation. A decision is usually received within a few business days."
       },
       "step4": {
         "title": "Membership Activation",
@@ -518,8 +518,8 @@
         "description": "Restoration of chamber operations after World War II. The chamber becomes a key institution for coordinating craftsmen and small entrepreneurs."
       },
       "event3": {
-        "title": "Transition and modernization",
-        "description": "Transformation into the Chamber of Independent Entrepreneurs of Republika Srpska. Adaptation to market economy and new legal regulations."
+        "title": "Transformation into the Crafts Entrepreneurship Chamber of the Banja Luka region",
+        "description": "Transformation into the Crafts Entrepreneurship Chamber of the Banja Luka region. Adaptation to market economy and new legal regulations."
       },
       "event4": {
         "title": "European integration",
@@ -528,6 +528,10 @@
       "event5": {
         "title": "Digital transformation",
         "description": "Introduction of digital services for members, online platforms and modernization of business processes. We become a leader in digitalization of chamber services."
+      },
+      "event6": {
+        "title": "New law and new chamber name",
+        "description": "On 1.1.2025, the new Law on Independent Entrepreneurs came into force — a complete reform of the legal framework. The chamber changed its name to the Regional Chamber of Independent Entrepreneurs Banja Luka."
       }
     }
   },
@@ -562,6 +566,16 @@
         "title": "Partnership",
         "description": "Cooperation with members, institutions and international organizations"
       }
+    }
+  },
+  "currentProjects": {
+    "badge": "Current Projects",
+    "title": "Current Projects",
+    "localTitle": "Local Projects",
+    "projects": {
+      "p1": "Strategy for development of women's entrepreneurship 2025 - 2031.",
+      "p2": "Strategy for development of social entrepreneurship 2026 - 2032.",
+      "p3": "Strategy for development of Small and Medium Enterprises 2021 - 2027."
     }
   },
   "euProjects": {
@@ -639,7 +653,7 @@
       "title": "Modern era and European integration",
       "event1": "Membership in EUROCHAMBRES. Full integration into European entrepreneur network.",
       "event2": "Launch of digital platforms for members. Complete digitalization of administrative services.",
-      "event3": "We become a leader in innovations among regional chambers. Over 11,000 active members."
+      "event3": "We become a leader in innovations among regional chambers. Over 11,500 active members."
     }
   },
   "gallery": {
@@ -742,6 +756,40 @@
     "governance": {
       "title": "Democratic governance",
       "description": "All chamber bodies are elected democratically by members, ensuring that every entrepreneur's voice is heard. The work of bodies is transparent and in accordance with law and chamber statute."
+    }
+  }
+},
+"conference": {
+  "breadcrumb": {
+    "home": "Home",
+    "about": "About",
+    "conference": "Conference"
+  },
+  "title": "Largest Conference of Independent Entrepreneurs",
+  "description": "Watch the recording from the previous conference",
+  "badge": "Conference"
+},
+"projectsSection": {
+  "badge": "Our Projects",
+  "title": "Active Projects and Initiatives",
+  "description": "We participate in regional and international projects that contribute to entrepreneurship development",
+  "projects": {
+    "regional": {
+      "title": "Regional Projects",
+      "description": "We participate in regional projects that strengthen entrepreneurship and improve the business environment throughout the region."
+    },
+    "womenCaravan": {
+      "title": "Women's Entrepreneurship Caravan",
+      "description": "Support and promotion of women's entrepreneurship through educational caravans, networking and exchange of experiences."
+    },
+    "greenCaravan": {
+      "title": "Green Entrepreneurship Caravan",
+      "description": "We promote green business practices and sustainable entrepreneurship through educational caravans across the region."
+    },
+    "expo": {
+      "title": "Expo 2027 Belgrade",
+      "description": "We are proud partners of Expo 2027 in Belgrade — a global expo that will promote innovation and the region's economy.",
+      "partner": "Official Partner"
     }
   }
 },

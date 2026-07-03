@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Users, CheckCircle, ArrowRight } from 'lucide-react';
+import { Users, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 interface MembershipHeroProps {
@@ -135,37 +135,15 @@ export default function MembershipHero({ dict, lang }: MembershipHeroProps) {
             {dict.hero.description}
           </motion.p>
 
-          {/* Key Points */}
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-          >
-            {[dict.hero.point1, dict.hero.point2, dict.hero.point3].map((point, index) => (
-              <motion.div
-                key={index}
-                className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20"
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5 + index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <CheckCircle size={24} className="text-accent flex-shrink-0" />
-                <span className="font-semibold">{point}</span>
-              </motion.div>
-            ))}
-          </motion.div>
-
           {/* CTA */}
           <motion.div
-            className="mt-12"
+            className="mt-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
           >
             <Link
-              href={`/${lang}/kontakt`}
+              href={`/${lang}/uputstvo-za-placanje`}
               className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent-light transition group shadow-xl"
             >
               {dict.hero.cta}

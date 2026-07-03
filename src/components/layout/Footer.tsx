@@ -17,12 +17,12 @@ export default function Footer({ lang, dict }: FooterProps) {
               {dict.footer.sections.contact}
             </h3>
             <div className="space-y-3">
-              <a 
-                href="tel:+38765789879" 
+              <a
+                href="tel:+38766518664"
                 className="flex items-center gap-2 hover:text-accent transition"
               >
                 <Phone size={18} />
-                <span>+387 65 789 879</span>
+                <span>+387 66 518 664</span>
               </a>
               <a 
                 href="mailto:info@pkspbl.com" 

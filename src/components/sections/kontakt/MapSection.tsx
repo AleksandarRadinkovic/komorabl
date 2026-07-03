@@ -17,7 +17,7 @@ export default function MapSection({ dict }: MapSectionProps) {
     {
       icon: MapPin,
       title: dict.map.details.address,
-      content: 'Mladena Stojanovića 16, 78000 Banja Luka'
+      content: 'Veselina Masleše 34, 78000 Banja Luka'
     },
     {
       icon: Clock,
@@ -27,8 +27,8 @@ export default function MapSection({ dict }: MapSectionProps) {
     {
       icon: Phone,
       title: dict.map.details.phone,
-      content: '+387 65 789 879',
-      link: 'tel:+38765789879'
+      content: '+387 66 518 664',
+      link: 'tel:+38766518664'
     },
     {
       icon: Mail,
@@ -105,7 +105,7 @@ export default function MapSection({ dict }: MapSectionProps) {
             })}
 
             <motion.a
-              href="https://maps.google.com/?q=Mladena+Stojanovića+16,+Banja+Luka"
+              href="https://maps.google.com/?q=Veselina+Masleše+34,+Banja+Luka"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-light transition-all group shadow-lg"

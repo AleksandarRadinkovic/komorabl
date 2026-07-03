@@ -144,7 +144,7 @@ export default function AboutHero({ dict, lang }: AboutHeroProps) {
           >
             {[
               { icon: Calendar, number: '1909', label: dict.hero.stats.founded },
-              { icon: Users, number: '11,000+', label: dict.hero.stats.members },
+              { icon: Users, number: '11.500', label: dict.hero.stats.members },
               { icon: Building2, number: '15', label: dict.hero.stats.municipalities },
               { icon: Award, number: '115+', label: dict.hero.stats.yearsExperience }
             ].map((stat, index) => {

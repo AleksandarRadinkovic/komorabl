@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Calendar, Award, Users, TrendingUp } from 'lucide-react';
+import { Calendar, Award, Users, TrendingUp, Scale } from 'lucide-react';
 
 interface TimelineSectionProps {
   dict: any;
@@ -43,6 +43,12 @@ export default function TimelineSection({ dict }: TimelineSectionProps) {
       title: dict.timeline.events.event5.title,
       description: dict.timeline.events.event5.description,
       icon: Award
+    },
+    {
+      year: '2025',
+      title: dict.timeline.events.event6.title,
+      description: dict.timeline.events.event6.description,
+      icon: Scale
     }
   ];
 

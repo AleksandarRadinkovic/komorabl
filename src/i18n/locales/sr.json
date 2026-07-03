@@ -13,22 +13,22 @@
     "description": "Podrška i zaštita interesa preduzetnika u Republici Srpskoj",
     "badge": "Podrška preduzetništvu u Republici Srpskoj",
     "stats": {
-      "members": "11,000+",
+      "members": "11.500",
       "membersLabel": "Članova",
       "municipalities": "15",
       "municipalitiesLabel": "Gradova i opština",
       "years": "100+",
       "yearsLabel": "Godina iskustva"
     },
-    "cta": "Pokreni proceduru",
-    "ctaSecondary": "Saznaj više"
+    "cta": "O komori",
+    "ctaSecondary": "Važni dokumenti"
   },
 "about": {
   "badge": "O nama",
-  "title": "Tradicija dugačka više od 100 godina",
+  "title": "Tradicija duga više od 100 godina",
   "description1": "Područna komora samostalnih preduzetnika Banja Luka je samostalna, stručno-poslovna, nevladina i neprofitna organizacija koja objedinjuje samostalne preduzetnike sa područja 15 gradova i opština regije Banja Luka.",
   "description2": "Naša komora pruža sveobuhvatnu podršku preduzetnicima kroz edukaciju, savjetovanje i zaštitu njihovih poslovnih interesa. Sa tradicijom koja datira još od 1909. godine, nastavljamo da budemo stub podrške za preduzetničku zajednicu.",
-  "description3": "Kao dio evropske mreže preduzetnika, aktivno učestvujemo u međunarodnim projektima i EU programima. Kontaktirajte nas za informacije o aktuelnim projektima i mogućnostima saradnje.",
+  "description3": "Kao dio evropske mreže preduzetništva",
   "cta": "Saznaj više",
   "ctaProjects": "EU projekti",
   "features": {
@@ -37,12 +37,12 @@
       "description": "Više od 115 godina tradicije i podrške preduzetnicima"
     },
     "members": {
-      "title": "11,000+ članova",
+      "title": "11.500 članova",
       "description": "Najveća komorska regija u Republici Srpskoj"
     },
     "europe": {
       "title": "EU mreža",
-      "description": "Dio evropske mreže preduzetnika i EU projekata"
+      "description": "Kao dio evropske mreže preduzetništva"
     },
     "mission": {
       "title": "Naša misija",
@@ -113,7 +113,7 @@
     "description": "Pridružite se najvećoj komorskoj regiji u Republici Srpskoj i iskoristite sve benefite članstva",
     "benefit1": "Besplatne pravne konsultacije",
     "benefit2": "Popusti na edukacije i obuke",
-    "benefit3": "Networking sa 11,000+ članova",
+    "benefit3": "Networking sa 11.500 članova",
     "benefit4": "Podrška u razvoju biznisa",
     "primaryCta": "Postani član",
     "secondaryCta": "Kontaktiraj nas"
@@ -124,7 +124,7 @@
     "quickLinks": "Brzi linkovi",
     "workingHours": "Radno vrijeme"
   },
-  "address": "Mladena Stojanovića 16, Banja Luka",
+  "address": "Veselina Masleše 34, Banja Luka",
   "workingHours": {
     "weekdays": "Pon - Pet: 08:00 - 16:00",
     "weekend": "Sub - Ned: Zatvoreno"
@@ -135,7 +135,7 @@
   "metadata": {
     "home": {
       "title": "PKSP Banja Luka - Područna komora samostalnih preduzetnika",
-      "description": "Najveća komorska regija u Republici Srpskoj sa preko 11,000 članova. Podrška i zaštita interesa samostalnih preduzetnika."
+      "description": "Najveća komorska regija u Republici Srpskoj sa preko 11.500 članova. Podrška i zaštita interesa samostalnih preduzetnika."
     }
   },
 "contact": {
@@ -222,13 +222,13 @@
     "membership": "Članstvo"
   },
   "hero": {
-    "badge": "11,000+ aktivnih članova",
-    "title": "Automatsko članstvo za sve preduzetnike",
-    "description": "Registracijom samostalnog preduzeća na području Banja Luke regije automatski postajete član naše komore sa svim benefitima",
+    "badge": "11.500 aktivnih članova",
+    "title": "Kako postaješ član komore",
+    "description": "Na osnovu Zakona o samostalnim preduzetnicima, svaki registrovani samostalni preduzetnik sa područja naše regije postaje obavezni član Područne komore samostalnih preduzetnika Banja Luka.",
     "point1": "Bez dodatnih troškova",
     "point2": "Automatska registracija",
     "point3": "Trenutni pristup benefitima",
-    "cta": "Kontaktirajte nas"
+    "cta": "Uputstvo za plaćanje članarine"
   },
   "automatic": {
     "badge": "Kako funkcioniše",
@@ -266,7 +266,7 @@
       },
       "networking": {
         "title": "Networking",
-        "description": "Povezivanje sa 11,000+ preduzetnika, poslovni događaji i B2B sastanci"
+        "description": "Povezivanje sa 11.500 preduzetnika, poslovni događaji i B2B sastanci"
       },
       "business": {
         "title": "Poslovna podrška",
@@ -290,17 +290,17 @@
       "step1": {
         "title": "Priprema dokumentacije",
         "description": "Pribavite potrebna dokumenta",
-        "details": "Lična karta, jedinstveni matični broj građana (JMBG), izvod iz matične knjige rođenih i dokaz o adresi prebivališta"
+        "details": "Kopija lične karte, uvjerenje iz osnovnog suda da nemate novčanih dugovanja i da vam nije izrečena zabrana obavljanja djelatnosti, uvjerenje da nemate poreskih dugovanja, popunjeni obrazac SP1."
       },
       "step2": {
         "title": "Podnošenje zahtjeva",
-        "description": "Podnesite zahtjev u Agenciju",
-        "details": "Zahtjev za registraciju možete podnijeti lično u Agenciji za registraciju ili elektronski preko e-Registra. Potrebno je definisati djelatnost koju ćete obavljati"
+        "description": "Podnošenje zahtjeva u jedinici lokalne samouprave",
+        "details": "Zahtjev za registraciju podnosite u nadležnoj jedinici lokalne samouprave na vašem području."
       },
       "step3": {
         "title": "Čekanje na odobrenje",
-        "description": "Proces odobravanja",
-        "details": "Agencija za registraciju procesira vaš zahtjev (obično 1-3 radna dana). Nakon odobrenja, automatski bivate prijavljeni u našu komoru"
+        "description": "Nakon podnošenja čeka se par dana za odobrenje zahtjeva.",
+        "details": "Nakon podnošenja zahtjeva, nadležni organ procesira dokumentaciju. Rješenje se obično dobija u roku od nekoliko radnih dana."
       },
       "step4": {
         "title": "Aktivacija članstva",
@@ -518,8 +518,8 @@
         "description": "Obnova rada komore nakon Drugog svjetskog rata. Komora postaje ključna institucija za koordinaciju zanatlija i malih preduzetnika."
       },
       "event3": {
-        "title": "Tranzicija i modernizacija",
-        "description": "Transformacija u Komoru samostalnih preduzetnika Republike Srpske. Adaptacija na tržišnu ekonomiju i nova zakonska regulativa."
+        "title": "Transformacija u Zanatsko preduzetničku komoru regije Banjaluka",
+        "description": "Transformacija u Zanatsko preduzetničku komoru regije Banjaluka. Adaptacija na tržišnu ekonomiju i nova zakonska regulativa."
       },
       "event4": {
         "title": "Evropska integracija",
@@ -528,6 +528,10 @@
       "event5": {
         "title": "Digitalna transformacija",
         "description": "Uvođenje digitalnih usluga za članove, online platforme i modernizacija poslovnih procesa. Postajemo lider u digitalizaciji komorskih usluga."
+      },
+      "event6": {
+        "title": "Novi zakon i novo ime komore",
+        "description": "1.1.2025. stupio na snagu novi Zakon o samostalnim preduzetnicima — potpuna reforma zakonskog okvira. Komora mijenja ime u Područna komora samostalnih preduzetnika Banja Luka."
       }
     }
   },
@@ -562,6 +566,16 @@
         "title": "Partnerstvo",
         "description": "Saradnja sa članovima, institucijama i međunarodnim organizacijama"
       }
+    }
+  },
+  "currentProjects": {
+    "badge": "Aktuelni projekti",
+    "title": "Aktuelni projekti",
+    "localTitle": "Lokalni projekti",
+    "projects": {
+      "p1": "Strategija razvoja preduzetništva žena od 2025 - 2031.",
+      "p2": "Strategija razvoja društvenog preduzetništva 2026 - 2032.",
+      "p3": "Strategija razvoja Malih i srednjih preduzeća 2021 - 2027."
     }
   },
   "euProjects": {
@@ -639,7 +653,7 @@
       "title": "Moderna era i evropske integracije",
       "event1": "Članstvo u EUROCHAMBRES. Puna integracija u evropsku mrežu preduzetnika.",
       "event2": "Lansiranje digitalnih platformi za članove. Potpuna digitalizacija administrativnih usluga.",
-      "event3": "Postajemo lider u inovacijama među komorama u regionu. Preko 11,000 aktivnih članova."
+      "event3": "Postajemo lider u inovacijama među komorama u regionu. Preko 11.500 aktivnih članova."
     }
   },
   "gallery": {
@@ -742,6 +756,40 @@
     "governance": {
       "title": "Demokratsko upravljanje",
       "description": "Svi organi komore biraju se demokratski od strane članova, osiguravajući da glas svakog preduzetnika bude čut. Rad organa je transparentan i u skladu sa zakonom i statutom komore."
+    }
+  }
+},
+"conference": {
+  "breadcrumb": {
+    "home": "Početna",
+    "about": "O komori",
+    "conference": "Konferencija"
+  },
+  "title": "Najveća konferencija samostalnih preduzetnika",
+  "description": "Pogledajte snimak sa prethodne konferencije",
+  "badge": "Konferencija"
+},
+"projectsSection": {
+  "badge": "Naši projekti",
+  "title": "Aktivni projekti i inicijative",
+  "description": "Učestvujemo u regionalnim i međunarodnim projektima koji doprinose razvoju preduzetništva",
+  "projects": {
+    "regional": {
+      "title": "Regionalni projekti",
+      "description": "Učestvujemo u regionalnim projektima koji jačaju preduzetništvo i unapređuju poslovno okruženje u čitavoj regiji."
+    },
+    "womenCaravan": {
+      "title": "Karavan preduzetništva žena",
+      "description": "Podrška i promocija ženskog preduzetništva kroz karavane edukacija, umrežavanja i razmjene iskustava."
+    },
+    "greenCaravan": {
+      "title": "Karavan zelenog preduzetništva",
+      "description": "Promovišemo zelene poslovne prakse i održivo preduzetništvo kroz edukativne karavane širom regije."
+    },
+    "expo": {
+      "title": "Expo 2027 Beograd",
+      "description": "Ponosni smo partneri Expo 2027 u Beogradu — globalnog sajma koji će promovišiti inovacije i privredu regiona.",
+      "partner": "Zvanični partner"
     }
   }
 },

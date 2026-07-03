@@ -12,7 +12,7 @@ export default async function MembershipPage({ params }: { params: { lang: 'sr' 
     <div>
       <MembershipHero dict={dict.membership} lang={params.lang} />
       <AutomaticMembership dict={dict.membership} />
-      <BenefitsSection dict={dict.membership} />
+      <BenefitsSection dict={dict.membership} lang={params.lang} />
       <ProcessSection dict={dict.membership} lang={params.lang} />
       <FAQSection dict={dict.membership} />
     </div>

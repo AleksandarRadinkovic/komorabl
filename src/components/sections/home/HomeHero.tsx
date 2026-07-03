@@ -268,14 +268,14 @@ export default function HomeHero({ dict, lang }: HomeHeroProps) {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <Link
-              href={`/${lang}/clanstvo`}
+              href={`/${lang}/o-komori`}
               className="group bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent-light transition transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl"
             >
               {dict.hero.cta}
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href={`/${lang}/o-komori`}
+              href={`/${lang}/o-komori/izvjestaji`}
               className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition shadow-lg"
             >
               {dict.hero.ctaSecondary}

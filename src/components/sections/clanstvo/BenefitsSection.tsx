@@ -3,20 +3,22 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { 
-  Scale, 
-  GraduationCap, 
-  Users, 
-  TrendingUp, 
-  FileText, 
-  Globe 
+import {
+  Scale,
+  GraduationCap,
+  Users,
+  TrendingUp,
+  Globe,
+  ArrowRight
 } from 'lucide-react';
+import Link from 'next/link';
 
 interface BenefitsSectionProps {
   dict: any;
+  lang?: string;
 }
 
-export default function BenefitsSection({ dict }: BenefitsSectionProps) {
+export default function BenefitsSection({ dict, lang = 'sr' }: BenefitsSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -25,7 +27,8 @@ export default function BenefitsSection({ dict }: BenefitsSectionProps) {
       icon: Scale,
       title: dict.benefits.list.legal.title,
       description: dict.benefits.list.legal.description,
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-blue-500 to-blue-600',
+      link: `/${lang}/o-komori/advokat`
     },
     {
       icon: GraduationCap,
@@ -44,12 +47,6 @@ export default function BenefitsSection({ dict }: BenefitsSectionProps) {
       title: dict.benefits.list.business.title,
       description: dict.benefits.list.business.description,
       color: 'from-orange-500 to-orange-600'
-    },
-    {
-      icon: FileText,
-      title: dict.benefits.list.administrative.title,
-      description: dict.benefits.list.administrative.description,
-      color: 'from-red-500 to-red-600'
     },
     {
       icon: Globe,
@@ -90,7 +87,7 @@ export default function BenefitsSection({ dict }: BenefitsSectionProps) {
             return (
               <motion.div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all group border border-neutral-200"
+                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all group border border-neutral-200 flex flex-col"
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
@@ -102,9 +99,18 @@ export default function BenefitsSection({ dict }: BenefitsSectionProps) {
                 <h3 className="text-2xl font-bold text-neutral-900 mb-3 group-hover:text-primary transition-colors">
                   {benefit.title}
                 </h3>
-                <p className="text-neutral-600 leading-relaxed">
+                <p className="text-neutral-600 leading-relaxed flex-1">
                   {benefit.description}
                 </p>
+                {benefit.link && (
+                  <Link
+                    href={benefit.link}
+                    className="inline-flex items-center gap-2 mt-5 text-primary font-semibold hover:gap-3 transition-all text-sm"
+                  >
+                    Biografija advokata
+                    <ArrowRight size={16} />
+                  </Link>
+                )}
               </motion.div>
             );
           })}

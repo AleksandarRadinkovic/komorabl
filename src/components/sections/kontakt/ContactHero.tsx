@@ -196,8 +196,8 @@ export default function ContactHero({ dict, lang }: ContactHeroProps) {
             >
               <Phone size={32} className="mx-auto mb-3 text-accent" />
               <div className="text-sm opacity-80 mb-1">{dict.hero.phone}</div>
-              <a href="tel:+38765789879" className="text-lg font-bold hover:text-accent transition-colors">
-                +387 65 789 879
+              <a href="tel:+38766518664" className="text-lg font-bold hover:text-accent transition-colors">
+                +387 66 518 664
               </a>
             </motion.div>
 
@@ -225,7 +225,7 @@ export default function ContactHero({ dict, lang }: ContactHeroProps) {
               <MapPin size={32} className="mx-auto mb-3 text-accent" />
               <div className="text-sm opacity-80 mb-1">{dict.hero.address}</div>
               <div className="text-lg font-bold">
-                Mladena Stojanovića 16<br />Banja Luka
+                Veselina Masleše 34<br />Banja Luka
               </div>
             </motion.div>
           </div>

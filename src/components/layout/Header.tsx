@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Phone, Mail, Clock, ChevronDown, Building2, History, Users, FileText, MapPin } from 'lucide-react';
+import { Menu, X, Phone, Mail, Clock, ChevronDown, Building2, History, Users, FileText, Video } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type HeaderProps = {
@@ -25,9 +25,10 @@ const translations = {
       history: 'Istorijat',
       organs: 'Organi komore',
       reports: 'Izvještaji',
+      conference: 'Konferencija',
     },
     contact: {
-      phone: '+387 65 789 879',
+      phone: '+387 66 518 664',
       email: 'info@pkspbl.com',
       hours: 'Pon - Pet 08:00 - 16:00'
     }
@@ -46,9 +47,10 @@ const translations = {
       history: 'History',
       organs: 'Chamber Bodies',
       reports: 'Reports',
+      conference: 'Conference',
     },
     contact: {
-      phone: '+387 65 789 879',
+      phone: '+387 66 518 664',
       email: 'info@pkspbl.com',
       hours: 'Mon - Fri 08:00 - 16:00'
     }
@@ -76,6 +78,7 @@ export default function Header({ lang }: HeaderProps) {
     { icon: History, label: t.submenu.history, href: `/${lang}/o-komori/istorijat` },
     { icon: Users, label: t.submenu.organs, href: `/${lang}/o-komori/organi` },
     { icon: FileText, label: t.submenu.reports, href: `/${lang}/o-komori/izvjestaji` },
+    { icon: Video, label: t.submenu.conference, href: `/${lang}/o-komori/konferencija` },
   ];
 
   return (
