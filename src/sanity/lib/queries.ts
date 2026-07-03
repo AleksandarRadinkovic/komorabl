@@ -36,3 +36,15 @@ export const latestPostsQuery = groq`
     category,
   }
 `;
+
+export const allDokumentiQuery = groq`
+  *[_type == "dokument"] | order(publishedAt desc) {
+    _id,
+    title,
+    category,
+    publishedAt,
+    fileUrl,
+    file,
+    description,
+  }
+`;
