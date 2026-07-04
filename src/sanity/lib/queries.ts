@@ -44,7 +44,7 @@ export const allDokumentiQuery = groq`
     category,
     publishedAt,
     fileUrl,
-    file,
+    "fileAssetUrl": file.asset->url,
     description,
   }
 `;

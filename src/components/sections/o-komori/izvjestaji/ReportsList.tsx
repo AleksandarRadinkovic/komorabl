@@ -11,7 +11,7 @@ interface Dokument {
   category: string;
   publishedAt?: string;
   fileUrl?: string;
-  file?: { asset?: { url?: string } };
+  fileAssetUrl?: string;
   description?: string;
 }
 
@@ -107,7 +107,7 @@ export default function ReportsList({ dict, documents }: ReportsListProps) {
               {/* Documents in category */}
               <div className="space-y-4">
                 {docs.map((doc) => {
-                  const downloadUrl = doc.fileUrl || doc.file?.asset?.url || '#';
+                  const downloadUrl = doc.fileAssetUrl || doc.fileUrl || '#';
                   const delay = 0.3 + (animIndex++ % 6) * 0.08;
                   return (
                     <motion.div
