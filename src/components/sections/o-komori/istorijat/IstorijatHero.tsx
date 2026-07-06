@@ -105,7 +105,7 @@ export default function IstorijatHero({ dict, lang }: IstorijatHeroProps) {
           >
             {[
               { icon: Calendar, number: '1909', label: dict.hero.stats.founded },
-              { icon: BookOpen, number: '115+', label: dict.hero.stats.years },
+              { icon: BookOpen, number: '117+', label: dict.hero.stats.years },
               { icon: Calendar, number: '2026', label: dict.hero.stats.today }
             ].map((stat, index) => {
               const Icon = stat.icon;

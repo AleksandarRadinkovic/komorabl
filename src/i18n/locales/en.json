@@ -66,7 +66,7 @@
       },
       "legal": {
         "title": "Legal Support",
-        "description": "Consulting and protection of members rights"
+        "description": "Expert legal advice and protection of your interests, with special benefits for chamber members"
       },
       "business": {
         "title": "Business Services",
@@ -496,7 +496,7 @@
   "hero": {
     "badge": "Tradition since 1909",
     "title": "About the Regional Chamber of Independent Entrepreneurs",
-    "description": "The oldest and largest chamber region in Republika Srpska with over 115 years of tradition",
+    "description": "The oldest and largest chamber region in Republika Srpska with over 117 years of tradition",
     "stats": {
       "founded": "Year founded",
       "members": "Active members",
@@ -619,7 +619,7 @@
   },
   "hero": {
     "badge": "Our history",
-    "title": "115 years of tradition and development",
+    "title": "117 years of tradition and development",
     "description": "A journey through time that shaped the largest chamber region in Republika Srpska",
     "stats": {
       "founded": "Year founded",
@@ -693,69 +693,26 @@
     "title": "Chamber Bodies",
     "description": "Transparency, professionalism and dedication to our members' interests"
   },
-  "leadership": {
-    "badge": "Leadership",
-    "title": "Chamber Presidency",
-    "description": "Elected representatives who lead the chamber and represent the interests of all independent entrepreneurs",
-    "president": {
-      "name": "Marko Marković",
-      "position": "Chamber President",
-      "bio": "With over 20 years of experience in entrepreneurship, he leads the chamber with a vision of modernization and digitalization of services. Dedicated to strengthening the position of independent entrepreneurs in the economic system of Republika Srpska."
-    },
-    "vicePresident1": {
-      "name": "Jelena Jovanović",
-      "position": "Chamber Vice President",
-      "bio": "Focused on education and development of entrepreneurial competencies, she coordinates training programs and mentorship for members. Expert in craft activities with many years of experience."
-    },
-    "vicePresident2": {
-      "name": "Nikola Nikolić",
-      "position": "Chamber Vice President",
-      "bio": "Responsible for international cooperation and European integration. Actively participates in projects that connect domestic entrepreneurs with European markets and opportunities."
-    }
+  "notice": {
+    "badge": "Under construction",
+    "title": "This page is under construction",
+    "description": "We are updating the content about the chamber's bodies. Detailed information about their composition will be available on this page soon."
   },
-  "boards": {
-    "badge": "Governing bodies",
-    "title": "Management structure",
-    "description": "Four key bodies that ensure democratic and transparent functioning of the chamber",
-    "responsibilitiesLabel": "Responsibilities",
+  "composition": {
+    "badge": "Chamber structure",
+    "title": "The chamber's bodies are",
+    "description": "The chamber's work is based on three bodies that together ensure democratic and transparent functioning.",
     "assembly": {
-      "name": "Chamber Assembly",
-      "description": "The highest body of the chamber that makes key decisions about the chamber's operations, development and policy.",
-      "members": "51 delegates",
-      "resp1": "Adoption of the statute and other key chamber acts",
-      "resp2": "Adoption of annual work program and financial plan",
-      "resp3": "Election of Management and Supervisory Board members",
-      "resp4": "Consideration of reports on work and financial operations"
-    },
-    "supervisory": {
-      "name": "Supervisory Board",
-      "description": "Control body that oversees the legality and regularity of the chamber's work and its bodies.",
-      "members": "5 members",
-      "resp1": "Supervision of Management Board work and chamber operations",
-      "resp2": "Control of financial operations and budget execution",
-      "resp3": "Submission of reports to the Assembly with observations and recommendations",
-      "resp4": "Protection of members' interests and proper work of chamber bodies"
+      "name": "Assembly",
+      "description": "The highest body of the Chamber, which makes key decisions about its operations, development and policy."
     },
     "management": {
       "name": "Management Board",
-      "description": "Executive body that manages the chamber's work between Assembly sessions.",
-      "members": "7 members",
-      "resp1": "Implementation of Assembly decisions and realization of work program",
-      "resp2": "Management of financial resources and chamber property",
-      "resp3": "Representation and advocacy of chamber interests",
-      "resp4": "Making business decisions and monitoring operational work"
+      "description": "The executive body that manages the Chamber's work between Assembly sessions."
     },
-    "arbitration": {
-      "name": "Arbitration Court",
-      "description": "Independent body for resolving disputes between chamber members in accordance with the law.",
-      "members": "3 arbitrators",
-      "resp1": "Resolution of commercial disputes between chamber members",
-      "resp2": "Arbitration proceedings under member contracts containing arbitration clause",
-      "resp3": "Mediation and peaceful resolution of business disagreements"
-    },
-    "governance": {
-      "title": "Democratic governance",
-      "description": "All chamber bodies are elected democratically by members, ensuring that every entrepreneur's voice is heard. The work of bodies is transparent and in accordance with law and chamber statute."
+    "president": {
+      "name": "Chamber President",
+      "description": "Represents and advocates for the Chamber and the interests of its members."
     }
   }
 },

@@ -66,7 +66,7 @@
       },
       "legal": {
         "title": "Pravna podrška",
-        "description": "Savjetovanje i zaštita prava članova"
+        "description": "Stručno pravno savjetovanje i zaštita interesa, uz posebne pogodnosti za članove komore"
       },
       "business": {
         "title": "Poslovne usluge",
@@ -496,7 +496,7 @@
   "hero": {
     "badge": "Tradicija od 1909. godine",
     "title": "O Područnoj komori samostalnih preduzetnika",
-    "description": "Najstarija i najveća komorska regija u Republici Srpskoj sa preko 115 godina tradicije",
+    "description": "Najstarija i najveća komorska regija u Republici Srpskoj sa preko 117 godina tradicije",
     "stats": {
       "founded": "Godina osnivanja",
       "members": "Aktivnih članova",
@@ -619,7 +619,7 @@
   },
   "hero": {
     "badge": "Naša istorija",
-    "title": "115 godina tradicije i razvoja",
+    "title": "117 godina tradicije i razvoja",
     "description": "Putovanje kroz vrijeme koje je oblikovalo najveću komorsku regiju u Republici Srpskoj",
     "stats": {
       "founded": "Godina osnivanja",
@@ -693,69 +693,26 @@
     "title": "Organi komore",
     "description": "Transparentnost, profesionalnost i predanost interesima naših članova"
   },
-  "leadership": {
-    "badge": "Rukovodstvo",
-    "title": "Predsjedništvo komore",
-    "description": "Izabrani predstavnici koji vode komoru i zastupaju interese svih samostalnih preduzetnika",
-    "president": {
-      "name": "Marko Marković",
-      "position": "Predsjednik Komore",
-      "bio": "Sa preko 20 godina iskustva u preduzetništvu, vodi komoru sa vizijom modernizacije i digitalizacije usluga. Predano radi na jačanju pozicije samostalnih preduzetnika u ekonomskom sistemu Republike Srpske."
-    },
-    "vicePresident1": {
-      "name": "Jelena Jovanović",
-      "position": "Potpredsjednik Komore",
-      "bio": "Fokusirana na edukaciju i razvoj preduzetničkih kompetencija, koordinira programe obuke i mentorstva za članove. Stručnjak za zanatske djelatnosti sa dugogodišnjim iskustvom."
-    },
-    "vicePresident2": {
-      "name": "Nikola Nikolić",
-      "position": "Potpredsjednik Komore",
-      "bio": "Odgovoran za međunarodnu saradnju i evropske integracije. Aktivno učestvuje u projektima koji povezuju domaće preduzetnike sa evropskim tržištima i prilikama."
-    }
+  "notice": {
+    "badge": "U izradi",
+    "title": "Stranica je u izradi",
+    "description": "Radimo na ažuriranju sadržaja o organima komore. Detaljne informacije o njihovom sastavu uskoro će biti dostupne na ovoj stranici."
   },
-  "boards": {
-    "badge": "Organi upravljanja",
-    "title": "Struktura upravljanja",
-    "description": "Četiri ključna organa koji osiguravaju demokratsko i transparentno funkcionisanje komore",
-    "responsibilitiesLabel": "Odgovornosti",
+  "composition": {
+    "badge": "Struktura komore",
+    "title": "Organe komore čine",
+    "description": "Rad komore zasnovan je na tri organa koji zajedno osiguravaju demokratsko i transparentno funkcionisanje.",
     "assembly": {
-      "name": "Skupština Komore",
-      "description": "Najviše tijelo komore koje donosi ključne odluke o djelovanju, razvoju i politici komore.",
-      "members": "51 delegat",
-      "resp1": "Usvajanje statuta i drugih ključnih akata komore",
-      "resp2": "Donošenje godišnjeg programa rada i finansijskog plana",
-      "resp3": "Izbor članova Upravnog i Nadzornog odbora",
-      "resp4": "Razmatranje izvještaja o radu i finansijskom poslovanju"
-    },
-    "supervisory": {
-      "name": "Nadzorni odbor",
-      "description": "Kontrolno tijelo koje nadgleda zakonitost i pravilnost rada komore i njenih organa.",
-      "members": "5 članova",
-      "resp1": "Nadzor nad radom Upravnog odbora i poslovanjem komore",
-      "resp2": "Kontrola finansijskog poslovanja i izvršenja budžeta",
-      "resp3": "Podnošenje izvještaja Skupštini o zapažanjima i preporukama",
-      "resp4": "Zaštita interesa članova i pravilan rad organa komore"
+      "name": "Skupština",
+      "description": "Najviši organ Komore koji donosi ključne odluke o njenom djelovanju, razvoju i politici."
     },
     "management": {
       "name": "Upravni odbor",
-      "description": "Izvršno tijelo koje upravlja radom komore između sjednica Skupštine.",
-      "members": "7 članova",
-      "resp1": "Izvršavanje odluka Skupštine i realizacija programa rada",
-      "resp2": "Upravljanje finansijskim sredstvima i imovinom komore",
-      "resp3": "Predstavljanje i zastupanje interesa komore",
-      "resp4": "Donošenje poslovnih odluka i praćenje operativnog rada"
+      "description": "Izvršni organ koji upravlja radom Komore između sjednica Skupštine."
     },
-    "arbitration": {
-      "name": "Arbitražni sud",
-      "description": "Nezavisno tijelo za rješavanje sporova između članova komore u skladu sa zakonom.",
-      "members": "3 arbitra",
-      "resp1": "Rješavanje privrednih sporova između članova komore",
-      "resp2": "Arbitražno postupanje po ugovorima članova koji sadrže arbitražnu klauzulu",
-      "resp3": "Medijacija i mirno rješavanje poslovnih nesporazuma"
-    },
-    "governance": {
-      "title": "Demokratsko upravljanje",
-      "description": "Svi organi komore biraju se demokratski od strane članova, osiguravajući da glas svakog preduzetnika bude čut. Rad organa je transparentan i u skladu sa zakonom i statutom komore."
+    "president": {
+      "name": "Predsjednik Komore",
+      "description": "Predstavlja i zastupa Komoru i interese njenih članova."
     }
   }
 },

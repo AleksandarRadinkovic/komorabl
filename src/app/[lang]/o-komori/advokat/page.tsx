@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Scale, Phone, Mail, Award } from 'lucide-react';
+import { ArrowLeft, Scale, Phone, Mail, Award, Percent } from 'lucide-react';
 
 export default function AdvokatPage({ params }: { params: { lang: string } }) {
   const lang = params.lang;
@@ -37,7 +37,7 @@ export default function AdvokatPage({ params }: { params: { lang: string } }) {
               </Link>
               <span>/</span>
               <span className="text-accent font-semibold">
-                {lang === 'sr' ? 'Advokat komore' : 'Chamber Attorney'}
+                {lang === 'sr' ? 'Pravni zastupnik i savjetnik komore' : 'Chamber Legal Representative and Advisor'}
               </span>
             </motion.div>
 
@@ -57,7 +57,7 @@ export default function AdvokatPage({ params }: { params: { lang: string } }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              {lang === 'sr' ? 'Advokat komore' : 'Chamber Attorney'}
+              {lang === 'sr' ? 'Pravni zastupnik i savjetnik komore' : 'Chamber Legal Representative and Advisor'}
             </motion.h1>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function AdvokatPage({ params }: { params: { lang: string } }) {
                     <Scale size={64} className="text-white opacity-50" />
                   </div>
                   <p className="text-center text-xs text-neutral-400 mt-2">
-                    {lang === 'sr' ? 'Fotografija advokata' : 'Attorney photo'}
+                    {lang === 'sr' ? 'Fotografija' : 'Photo'}
                   </p>
                 </div>
 
@@ -89,7 +89,7 @@ export default function AdvokatPage({ params }: { params: { lang: string } }) {
                   <div className="flex items-center gap-3 mb-2">
                     <Award size={20} className="text-accent" />
                     <span className="text-accent font-semibold text-sm uppercase tracking-wide">
-                      {lang === 'sr' ? 'Advokat komore' : 'Chamber Attorney'}
+                      {lang === 'sr' ? 'Pravni zastupnik i savjetnik komore' : 'Chamber Legal Representative and Advisor'}
                     </span>
                   </div>
 
@@ -97,13 +97,29 @@ export default function AdvokatPage({ params }: { params: { lang: string } }) {
                     Nemanja Roljić
                   </h2>
 
-                  <div className="prose prose-neutral max-w-none mb-8">
+                  <div className="prose prose-neutral max-w-none mb-6">
                     <p className="text-neutral-700 leading-relaxed text-lg">
                       {lang === 'sr'
-                        ? 'Advokat Nemanja Roljić pruža pravnu zaštitu i savjetovanje svim članovima Područne komore samostalnih preduzetnika Banja Luka. Specijalizovan je za oblast privrednog prava i zaštitu prava preduzetnika.'
-                        : 'Attorney Nemanja Roljić provides legal protection and advice to all members of the Regional Chamber of Independent Entrepreneurs Banja Luka. He specializes in business law and protection of entrepreneurs\' rights.'}
+                        ? 'Nemanja Roljić je pravni zastupnik i savjetnik komore koji pruža pravnu zaštitu i savjetovanje svim članovima Područne komore samostalnih preduzetnika Banja Luka. Specijalizovan je za oblast privrednog prava i zaštitu prava preduzetnika.'
+                        : 'Nemanja Roljić is the chamber\'s legal representative and advisor, providing legal protection and advice to all members of the Regional Chamber of Independent Entrepreneurs Banja Luka. He specializes in business law and protection of entrepreneurs\' rights.'}
                     </p>
                   </div>
+
+                  <motion.div
+                    className="flex items-center gap-4 bg-accent/10 border border-accent/30 rounded-xl px-6 py-4 mb-8"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.6 }}
+                  >
+                    <div className="flex-shrink-0 bg-accent/20 p-2.5 rounded-lg">
+                      <Percent size={20} className="text-accent-dark" />
+                    </div>
+                    <p className="text-neutral-800 font-semibold leading-snug">
+                      {lang === 'sr'
+                        ? 'Pogodnost za članove komore: popust na sve usluge pravnog zastupnika i savjetnika.'
+                        : 'Member benefit: all chamber members receive a discount on the legal advisor\'s services.'}
+                    </p>
+                  </motion.div>
 
                   <div className="space-y-3">
                     <a

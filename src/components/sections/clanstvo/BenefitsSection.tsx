@@ -107,7 +107,7 @@ export default function BenefitsSection({ dict, lang = 'sr' }: BenefitsSectionPr
                     href={benefit.link}
                     className="inline-flex items-center gap-2 mt-5 text-primary font-semibold hover:gap-3 transition-all text-sm"
                   >
-                    Biografija advokata
+                    {lang === 'sr' ? 'Upoznajte pravnog savjetnika' : 'Meet the legal advisor'}
                     <ArrowRight size={16} />
                   </Link>
                 )}

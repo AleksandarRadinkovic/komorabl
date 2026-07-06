@@ -33,7 +33,8 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
       icon: Scale,
       title: dict.servicesPreview.list.legal.title,
       description: dict.servicesPreview.list.legal.description,
-      color: 'bg-gradient-to-br from-red-500 to-red-600'
+      color: 'bg-gradient-to-br from-red-500 to-red-600',
+      href: `/${lang}/o-komori/advokat`
     },
     {
       icon: Briefcase,
@@ -86,10 +87,9 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => {
             const Icon = service.icon;
-            return (
+            const card = (
               <motion.div
-                key={index}
-                className="group bg-neutral-50 p-8 rounded-xl hover:bg-white hover:shadow-xl transition-all cursor-pointer border border-neutral-100"
+                className="group bg-neutral-50 p-8 rounded-xl hover:bg-white hover:shadow-xl transition-all cursor-pointer border border-neutral-100 h-full"
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
@@ -103,6 +103,14 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
                 </h3>
                 <p className="text-neutral-600 leading-relaxed">{service.description}</p>
               </motion.div>
+            );
+
+            return service.href ? (
+              <Link href={service.href} key={index} className="block">
+                {card}
+              </Link>
+            ) : (
+              <div key={index}>{card}</div>
             );
           })}
         </div>
