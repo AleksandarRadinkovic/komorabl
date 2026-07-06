@@ -6,6 +6,14 @@ import { ArrowRight, FileText, GraduationCap, Scale, Briefcase, Globe, Headphone
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+function getInitials(name: string) {
+  return name
+    .split(' ')
+    .map((part) => part.charAt(0))
+    .join('')
+    .toUpperCase();
+}
+
 interface ServicesPreviewProps {
   dict: any;
   lang: string;
@@ -34,7 +42,10 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
       title: dict.servicesPreview.list.legal.title,
       description: dict.servicesPreview.list.legal.description,
       color: 'bg-gradient-to-br from-red-500 to-red-600',
-      href: `/${lang}/o-komori/advokat`
+      href: `/${lang}/o-komori/advokat`,
+      advisor: dict.servicesPreview.list.legal.advisor,
+      advisorRole: dict.servicesPreview.list.legal.advisorRole,
+      cta: dict.servicesPreview.list.legal.cta
     },
     {
       icon: Briefcase,
@@ -102,6 +113,28 @@ export default function ServicesPreview({ dict, lang }: ServicesPreviewProps) {
                   {service.title}
                 </h3>
                 <p className="text-neutral-600 leading-relaxed">{service.description}</p>
+
+                {service.advisor && (
+                  <div className="mt-6 pt-5 border-t border-neutral-200">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white font-semibold text-sm shadow-md">
+                        {getInitials(service.advisor)}
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-neutral-900 leading-tight">
+                          {service.advisor}
+                        </p>
+                        <p className="text-xs text-neutral-500 leading-tight">
+                          {service.advisorRole}
+                        </p>
+                      </div>
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:gap-2.5 transition-all">
+                      {service.cta}
+                      <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                )}
               </motion.div>
             );
 

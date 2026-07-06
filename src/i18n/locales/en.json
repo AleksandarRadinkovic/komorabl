@@ -66,7 +66,10 @@
       },
       "legal": {
         "title": "Legal Support",
-        "description": "Expert legal advice and protection of your interests, with special benefits for chamber members"
+        "description": "Expert legal advice and protection of your interests, with special benefits for chamber members",
+        "advisor": "Nemanja Roljić",
+        "advisorRole": "Chamber Legal Advisor",
+        "cta": "Learn more"
       },
       "business": {
         "title": "Business Services",

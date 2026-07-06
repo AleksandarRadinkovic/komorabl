@@ -66,7 +66,10 @@
       },
       "legal": {
         "title": "Pravna podrška",
-        "description": "Stručno pravno savjetovanje i zaštita interesa, uz posebne pogodnosti za članove komore"
+        "description": "Stručno pravno savjetovanje i zaštita interesa, uz posebne pogodnosti za članove komore",
+        "advisor": "Nemanja Roljić",
+        "advisorRole": "Pravni savjetnik komore",
+        "cta": "Saznaj više"
       },
       "business": {
         "title": "Poslovne usluge",
