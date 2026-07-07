@@ -22,6 +22,7 @@ export async function generateMetadata({
     path: '',
     title: dict.metadata.home.title,
     description: dict.metadata.home.description,
+    absoluteTitle: true,
     keywords: params.lang === 'sr' ? BASE_KEYWORDS_SR : BASE_KEYWORDS_EN,
   });
 }

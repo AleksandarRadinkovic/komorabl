@@ -30,6 +30,8 @@ interface BuildMetadataArgs {
   keywords?: string[];
   image?: string;
   type?: 'website' | 'article';
+  /** Use when title already contains the brand name, to avoid "%s | PKSP Banja Luka" duplicating it. */
+  absoluteTitle?: boolean;
 }
 
 export function buildMetadata({
@@ -40,12 +42,13 @@ export function buildMetadata({
   keywords,
   image = '/opengraph-image.png',
   type = 'website',
+  absoluteTitle = false,
 }: BuildMetadataArgs): Metadata {
   const normalizedPath = path ? `/${path.replace(/^\/+/, '')}` : '';
   const url = `${SITE_URL}/${lang}${normalizedPath}`;
 
   return {
-    title,
+    title: absoluteTitle ? { absolute: title } : title,
     description,
     keywords: keywords && keywords.length > 0 ? keywords : undefined,
     alternates: {
