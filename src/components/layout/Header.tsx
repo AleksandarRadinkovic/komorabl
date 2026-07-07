@@ -222,7 +222,7 @@ export default function Header({ lang }: HeaderProps) {
               </Link>
               <Link 
                 href={`/${lang}/kontakt`} 
-                className="ml-2 px-6 py-2.5 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-lg hover:scale-105 transition-all"
+                className="ml-2 px-6 py-2.5 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-lg hover:shadow-lg hover:scale-105 transition-all"
               >
                 {t.nav.contact}
               </Link>
@@ -324,7 +324,7 @@ export default function Header({ lang }: HeaderProps) {
                   </Link>
                   <Link 
                     href={`/${lang}/kontakt`} 
-                    className="mx-4 mt-2 px-4 py-3 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg text-center"
+                    className="mx-4 mt-2 px-4 py-3 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-lg text-center transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {t.nav.contact}

@@ -76,6 +76,7 @@ export default function LatestNews({ dict, lang, posts }: LatestNewsProps) {
               transition={{ delay: 0.3 + index * 0.1, duration: 0.6 }}
               whileHover={{ y: -10 }}
             >
+              <Link href={`/${lang}/vijesti/${post.slug.current}`} className="block">
               <div className="relative h-48 bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
                 {post.mainImage ? (
                   <Image
@@ -112,14 +113,12 @@ export default function LatestNews({ dict, lang, posts }: LatestNewsProps) {
                   </p>
                 )}
 
-                <Link
-                  href={`/${lang}/vijesti/${post.slug.current}`}
-                  className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                >
+                <span className="inline-flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
                   {dict.news.readMore}
                   <ArrowRight size={18} />
-                </Link>
+                </span>
               </div>
+              </Link>
             </motion.article>
           ))}
         </div>
