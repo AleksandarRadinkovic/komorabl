@@ -6,6 +6,8 @@ import { urlFor } from '@/sanity/lib/image';
 import { buildMetadata } from '@/lib/seo';
 import PostPage from '@/components/sections/vijesti/PostPage';
 
+export const revalidate = 60;
+
 export async function generateStaticParams() {
   const posts = await client.fetch(allPostsQuery).catch(() => []);
   return posts.map((post: any) => ({ slug: post.slug.current }));

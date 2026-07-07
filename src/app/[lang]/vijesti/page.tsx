@@ -5,6 +5,8 @@ import { allPostsQuery } from '@/sanity/lib/queries';
 import { buildMetadata } from '@/lib/seo';
 import VijestiBlog from '@/components/sections/vijesti/VijestiBlog';
 
+export const revalidate = 60;
+
 export async function generateMetadata({
   params,
 }: {

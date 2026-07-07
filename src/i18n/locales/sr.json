@@ -91,6 +91,8 @@
     "description": "Pratite najnovije vijesti, događaje i informacije iz naše komore",
     "cta": "Sve vijesti",
     "readMore": "Pročitaj više",
+    "searchPlaceholder": "Pretraži vijesti...",
+    "noResults": "Nema vijesti koje odgovaraju pretrazi.",
     "categories": {
       "news": "Vijesti",
       "education": "Edukacija",

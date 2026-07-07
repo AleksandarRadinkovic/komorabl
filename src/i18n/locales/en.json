@@ -91,6 +91,8 @@
     "description": "Follow the latest news, events and information from our chamber",
     "cta": "All News",
     "readMore": "Read More",
+    "searchPlaceholder": "Search news...",
+    "noResults": "No news match your search.",
     "categories": {
       "news": "News",
       "education": "Education",

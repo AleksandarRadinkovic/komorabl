@@ -10,6 +10,8 @@ import ProjectsSection from '@/components/sections/home/ProjectsSection';
 import LatestNews from '@/components/sections/home/LatestNews';
 import CTASection from '@/components/sections/home/CTASection';
 
+export const revalidate = 60;
+
 export async function generateMetadata({
   params,
 }: {

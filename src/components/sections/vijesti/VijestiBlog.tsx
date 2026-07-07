@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Calendar, Newspaper } from 'lucide-react';
+import { ArrowRight, Calendar, Newspaper, Search } from 'lucide-react';
 import { urlFor } from '@/sanity/lib/image';
 
 interface Post {
@@ -35,6 +36,16 @@ function formatDate(dateStr: string) {
 }
 
 export default function VijestiBlog({ dict, lang, posts }: VijestiBlogProps) {
+  const [query, setQuery] = useState('');
+
+  const filteredPosts = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return posts;
+    return posts.filter((post) =>
+      post.title.toLowerCase().includes(q) || post.excerpt?.toLowerCase().includes(q)
+    );
+  }, [posts, query]);
+
   return (
     <div>
       {/* Hero */}
@@ -63,13 +74,31 @@ export default function VijestiBlog({ dict, lang, posts }: VijestiBlogProps) {
       {/* Posts grid */}
       <section className="py-20 bg-neutral-50">
         <div className="container mx-auto px-4">
+          <div className="relative max-w-xl mx-auto mb-12">
+            <Search
+              size={20}
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400"
+            />
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={dict.news?.searchPlaceholder || 'Pretraži vijesti...'}
+              className="w-full pl-12 pr-4 py-3 rounded-lg border border-neutral-300 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none bg-white"
+            />
+          </div>
+
           {posts.length === 0 ? (
             <p className="text-center text-neutral-500 text-lg py-20">
               Nema objavljenih vijesti.
             </p>
+          ) : filteredPosts.length === 0 ? (
+            <p className="text-center text-neutral-500 text-lg py-20">
+              {dict.news?.noResults || 'Nema vijesti koje odgovaraju pretrazi.'}
+            </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post, index) => (
+              {filteredPosts.map((post, index) => (
                 <motion.article
                   key={post._id}
                   className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all"

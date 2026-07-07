@@ -6,6 +6,8 @@ import { buildMetadata } from '@/lib/seo';
 import IzvjestajiHero from '@/components/sections/o-komori/izvjestaji/IzvjestajiHero';
 import ReportsList from '@/components/sections/o-komori/izvjestaji/ReportsList';
 
+export const revalidate = 60;
+
 export async function generateMetadata({
   params,
 }: {
