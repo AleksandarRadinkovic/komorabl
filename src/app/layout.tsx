@@ -1,17 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL, BASE_KEYWORDS_SR } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: {
     default: "PKSP Banja Luka",
     template: "%s | PKSP Banja Luka",
   },
-  description: "Područna komora samostalnih preduzetnika Banja Luka — podrška i zaštita interesa 11.500 preduzetnika u Republici Srpskoj.",
-  metadataBase: new URL("https://komorabl.vercel.app"),
+  description: "Područna komora samostalnih preduzetnika (Zanatsko preduzetnička komora) Banja Luka — podrška i zaštita interesa preko 11.500 preduzetnika u Republici Srpskoj.",
+  keywords: BASE_KEYWORDS_SR,
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: "/icon.png",
     apple: "/apple-icon.png",
     shortcut: "/icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
   },
   openGraph: {
     type: "website",

@@ -137,8 +137,48 @@
 
   "metadata": {
     "home": {
-      "title": "PKSP Banja Luka - Područna komora samostalnih preduzetnika",
-      "description": "Najveća komorska regija u Republici Srpskoj sa preko 11.500 članova. Podrška i zaštita interesa samostalnih preduzetnika."
+      "title": "PKSP Banja Luka – Područna komora samostalnih preduzetnika",
+      "description": "Područna komora samostalnih preduzetnika (Zanatsko preduzetnička komora) Banja Luka – podrška za preko 11.500 preduzetnika u 15 gradova i opština Republike Srpske od 1909. godine."
+    },
+    "about": {
+      "title": "O komori – Područna komora samostalnih preduzetnika",
+      "description": "Upoznajte Područnu komoru samostalnih preduzetnika Banja Luka, nekadašnju Zanatsko preduzetničku komoru – 117 godina tradicije, misija, vrijednosti i podrška preduzetnicima regije."
+    },
+    "istorijat": {
+      "title": "Istorijat komore – 117 godina tradicije",
+      "description": "Hronologija razvoja Područne komore samostalnih preduzetnika Banja Luka – od osnivanja Zanatske komore 1909. godine do danas, kroz najvažnije istorijske prekretnice."
+    },
+    "organi": {
+      "title": "Organi komore – Upravljačka struktura",
+      "description": "Saznajte više o organima Područne komore samostalnih preduzetnika Banja Luka – upravljačkoj strukturi koja obezbjeđuje transparentnost i profesionalnost rada komore."
+    },
+    "conference": {
+      "title": "Konferencija samostalnih preduzetnika",
+      "description": "Najveća regionalna konferencija samostalnih preduzetnika – pogledajte snimak i saznajte više o godišnjem okupljanju preduzetnika Republike Srpske."
+    },
+    "izvjestaji": {
+      "title": "Izvještaji o radu komore",
+      "description": "Godišnji izvještaji o aktivnostima, finansijskom poslovanju i rezultatima rada Područne komore samostalnih preduzetnika Banja Luka – transparentnost prema članovima."
+    },
+    "advokat": {
+      "title": "Pravni zastupnik i savjetnik komore",
+      "description": "Nemanja Roljić, pravni zastupnik i savjetnik Područne komore samostalnih preduzetnika Banja Luka, pruža pravnu zaštitu i savjetovanje uz pogodnosti za članove komore."
+    },
+    "services": {
+      "title": "Usluge za preduzetnike",
+      "description": "Sveobuhvatna podrška za samostalne preduzetnike – administrativne, edukativne i savjetodavne usluge Područne komore samostalnih preduzetnika Banja Luka."
+    },
+    "membership": {
+      "title": "Članstvo u komori",
+      "description": "Kako postati član Područne komore samostalnih preduzetnika Banja Luka – automatska registracija na osnovu Zakona o samostalnim preduzetnicima, bez dodatnih troškova."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktirajte Područnu komoru samostalnih preduzetnika Banja Luka – adresa, telefon, email i forma za brzu komunikaciju sa našim timom."
+    },
+    "vijesti": {
+      "title": "Vijesti i novosti",
+      "description": "Najnovije vijesti, aktivnosti i objave Područne komore samostalnih preduzetnika Banja Luka za preduzetnike Republike Srpske."
     }
   },
 "contact": {
@@ -172,7 +212,8 @@
       "message": "Vaša poruka..."
     },
     "submit": "Pošalji poruku",
-    "success": "Poruka uspješno poslata!"
+    "success": "Poruka uspješno poslata!",
+    "error": "Došlo je do greške. Molimo pokušajte ponovo."
   },
   "info": {
     "badge": "Korisne informacije",

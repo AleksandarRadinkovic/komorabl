@@ -137,8 +137,48 @@
 
   "metadata": {
     "home": {
-      "title": "PKSP Banja Luka - Chamber of Independent Entrepreneurs",
-      "description": "The largest chamber region in Republika Srpska with over 11,500 members. Support and protection of independent entrepreneurs' interests."
+      "title": "PKSP Banja Luka – Regional Chamber of Independent Entrepreneurs",
+      "description": "Regional Chamber of Independent Entrepreneurs Banja Luka (formerly the Trade and Entrepreneurial Chamber) supporting over 11,500 entrepreneurs across 15 municipalities in Republika Srpska since 1909."
+    },
+    "about": {
+      "title": "About Us – Regional Chamber of Independent Entrepreneurs",
+      "description": "Learn about the Regional Chamber of Independent Entrepreneurs Banja Luka, formerly the Trade and Entrepreneurial Chamber – 117 years of tradition, mission, values and support for entrepreneurs."
+    },
+    "istorijat": {
+      "title": "Our History – 117 Years of Tradition",
+      "description": "Timeline of the Regional Chamber of Independent Entrepreneurs Banja Luka – from the founding of the Trade Chamber in 1909 to today's leading business association in Republika Srpska."
+    },
+    "organi": {
+      "title": "Chamber Bodies – Governance Structure",
+      "description": "Learn about the governing bodies of the Regional Chamber of Independent Entrepreneurs Banja Luka, ensuring transparency and professionalism in the chamber's work."
+    },
+    "conference": {
+      "title": "Entrepreneurs Conference",
+      "description": "The largest regional conference of independent entrepreneurs – watch the recording and learn about the annual gathering of entrepreneurs in Republika Srpska."
+    },
+    "izvjestaji": {
+      "title": "Annual Reports",
+      "description": "Annual reports on activities, financial operations and results of the Regional Chamber of Independent Entrepreneurs Banja Luka – transparency for our members."
+    },
+    "advokat": {
+      "title": "Legal Representative and Advisor",
+      "description": "Nemanja Roljić, legal representative and advisor of the Regional Chamber of Independent Entrepreneurs Banja Luka, provides legal protection and advice with member discounts."
+    },
+    "services": {
+      "title": "Services for Entrepreneurs",
+      "description": "Comprehensive support for independent entrepreneurs – administrative, educational and advisory services from the Regional Chamber of Independent Entrepreneurs Banja Luka."
+    },
+    "membership": {
+      "title": "Chamber Membership",
+      "description": "How to become a member of the Regional Chamber of Independent Entrepreneurs Banja Luka – automatic registration under the Independent Entrepreneurs Act, at no extra cost."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact the Regional Chamber of Independent Entrepreneurs Banja Luka – address, phone, email and a contact form for fast communication with our team."
+    },
+    "vijesti": {
+      "title": "News",
+      "description": "Latest news, activities and announcements from the Regional Chamber of Independent Entrepreneurs Banja Luka for entrepreneurs in Republika Srpska."
     }
   },
 "contact": {
@@ -172,7 +212,8 @@
       "message": "Your message..."
     },
     "submit": "Send Message",
-    "success": "Message sent successfully!"
+    "success": "Message sent successfully!",
+    "error": "Something went wrong. Please try again."
   },
   "info": {
     "badge": "Useful information",

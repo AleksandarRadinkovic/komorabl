@@ -21,13 +21,33 @@ export default function ContactForm({ dict }: ContactFormProps) {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Ovdje ćeš dodati logiku za slanje forme
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        throw new Error('Slanje nije uspjelo');
+      }
+
+      setIsSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+      setTimeout(() => setIsSubmitted(false), 5000);
+    } catch (err) {
+      setError(dict.form.error || 'Došlo je do greške. Pokušajte ponovo.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -165,13 +185,18 @@ export default function ContactForm({ dict }: ContactFormProps) {
               />
             </div>
 
+            {/* Error message */}
+            {error && (
+              <p className="mb-4 text-red-600 font-medium">{error}</p>
+            )}
+
             {/* Submit Button */}
             <motion.button
               type="submit"
               className="w-full bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group disabled:opacity-50"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              disabled={isSubmitted}
+              disabled={isSubmitted || isSubmitting}
             >
               {isSubmitted ? (
                 <>
@@ -180,7 +205,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
                 </>
               ) : (
                 <>
-                  {dict.form.submit}
+                  {isSubmitting ? '...' : dict.form.submit}
                   <Send size={20} className="group-hover:translate-x-1 transition-transform" />
                 </>
               )}

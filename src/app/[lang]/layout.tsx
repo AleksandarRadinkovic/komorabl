@@ -1,55 +1,48 @@
 import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { getDictionary } from '@/i18n/dictionary';
 import { locales } from '@/i18n/config';
+import { SITE_URL } from '@/lib/seo';
 import '../globals.css';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ lang: locale }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: 'sr' | 'en' };
-}): Promise<Metadata> {
-  const dict = await getDictionary(params.lang);
-
-  return {
-    title: {
-      default: dict.metadata.home.title,
-      template: `%s | PKSP Banja Luka`,
+function OrganizationJsonLd({ lang }: { lang: 'sr' | 'en' }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'GovernmentOrganization',
+    name: 'Područna komora samostalnih preduzetnika Banja Luka',
+    alternateName: [
+      'PKSP Banja Luka',
+      'Zanatsko preduzetnička komora Banja Luka',
+      'Zanatska komora Banja Luka',
+      'Regional Chamber of Independent Entrepreneurs Banja Luka',
+    ],
+    url: `${SITE_URL}/${lang}`,
+    logo: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/opengraph-image.png`,
+    foundingDate: '1909',
+    telephone: '+387-66-518-664',
+    email: 'info@pkspbl.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Veselina Masleše 34',
+      addressLocality: 'Banja Luka',
+      addressRegion: 'Republika Srpska',
+      addressCountry: 'BA',
     },
-    description: dict.metadata.home.description,
-    icons: {
-      icon: '/icon.png',
-      apple: '/apple-icon.png',
-      shortcut: '/icon.png',
-    },
-    openGraph: {
-      title: dict.metadata.home.title,
-      description: dict.metadata.home.description,
-      type: 'website',
-      locale: params.lang === 'sr' ? 'sr_BA' : 'en_US',
-      siteName: 'PKSP Banja Luka',
-      images: [
-        {
-          url: '/opengraph-image.png',
-          width: 800,
-          height: 600,
-          alt: 'PKSP Banja Luka — Područna komora samostalnih preduzetnika',
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: dict.metadata.home.title,
-      description: dict.metadata.home.description,
-      images: ['/opengraph-image.png'],
-    },
+    areaServed: 'Republika Srpska',
   };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
 }
 
 export default async function LangLayout({
@@ -70,6 +63,7 @@ export default async function LangLayout({
   return (
     <html lang={lang}>
       <body className="antialiased">
+        <OrganizationJsonLd lang={lang} />
         <Header lang={lang} />
         <main className="min-h-screen">{children}</main>
         <Footer lang={lang} dict={dict} />
