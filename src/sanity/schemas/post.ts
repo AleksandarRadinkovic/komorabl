@@ -58,6 +58,7 @@ export const postSchema = defineType({
       name: 'category',
       title: 'Kategorija',
       type: 'string',
+      initialValue: 'vijesti',
       options: {
         list: [
           { title: 'Vijesti', value: 'vijesti' },

@@ -17,8 +17,8 @@ const postSchema = {
       of: [{ type: 'block' }, { type: 'image', options: { hotspot: true } }],
     },
     {
-      name: 'category', title: 'Kategorija', type: 'string',
-      options: { list: [{ title: 'Vijesti', value: 'vijesti' }, { title: 'Edukacija', value: 'edukacija' }, { title: 'Događaji', value: 'dogadjaji' }] },
+      name: 'category', title: 'Kategorija', type: 'string', initialValue: 'vijesti',
+      options: { list: [{ title: 'Vijesti', value: 'vijesti' }, { title: 'Edukacija', value: 'edukacija' }, { title: 'Događaji', value: 'dogadjaji' }, { title: 'Projekti', value: 'projekti' }] },
     },
     { name: 'wpId', title: 'WordPress ID', type: 'number', hidden: true },
   ],
