@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://pkspbl.com').replace(/\/+$/, '');
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.pkspbl.com').replace(/\/+$/, '');
 export const SITE_NAME = 'PKSP Banja Luka';
 
 export const BASE_KEYWORDS_SR = [
